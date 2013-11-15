@@ -8,8 +8,6 @@ Description: The Christensen & Hymas 2013 theme for WordPress is a fully respons
 Version: 1.2
 Text Domain: ch2013
 
-This is to test if gitHub will overwrite my stuff.
-
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
@@ -119,11 +117,11 @@ section {
 hgroup .phone-number {
     position: relative;
     text-align: center;
-    font-size: 43px;
-    font-size: 3.07142857rem;
+    font-size: 34px;
+    font-size: 2.42857143rem;
     width: auto;
     font-weight: bold;
-    color: #C2B08C;
+    color: #fff;
 }
 hgroup h
 audio,
@@ -197,9 +195,9 @@ img {
 .widget-title,
 .entry-content th,
 .comment-content th {
-	font-size: 14px;
-	font-size: 1rem;
-	line-height: 1.71428571;
+	font-size: 11px;
+	font-size: 0.785714286rem;
+	line-height: 2.181818182;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #636363;
@@ -209,9 +207,9 @@ img {
 article.format-quote footer.entry-meta,
 article.format-link footer.entry-meta,
 article.format-status footer.entry-meta {
-	font-size: 14px;
-	font-size: 1rem;
-	line-height: 1.71428571;
+	font-size: 11px;
+	font-size: 0.785714286rem;
+	line-height: 2.181818182;
 }
 
 /* Form fields, general styles first */
@@ -256,9 +254,9 @@ article.post-password-required input[type=submit],
 .bypostauthor cite span {
 	padding: 6px 10px;
 	padding: 0.428571429rem 0.714285714rem;
-	font-size: 14px;
-	font-size: 1rem;
-	line-height: 1.71428571;
+	font-size: 11px;
+	font-size: 0.785714286rem;
+	line-height: 1.428571429;
 	font-weight: normal;
 	color: #7c7c7c;
 	background-color: #e6e6e6;
@@ -426,9 +424,9 @@ img.wp-post-image {
 .gallery-caption,
 .entry-caption {
 	font-style: italic;
-	font-size: 15px;
-	font-size: 1.07142857rem;
-	line-height: 1.6;
+	font-size: 12px;
+	font-size: 0.857142857rem;
+	line-height: 2;
 	color: #757575;
 }
 img.wp-smiley,
@@ -518,9 +516,9 @@ img.wp-smiley,
 }
 .author-description p {
 	color: #757575;
-	font-size: 16px;
-	font-size: 1.14285714rem;
-	line-height: 1.5;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 1.846153846;
 }
 .author.archive .author-info {
 	border-top: 0;
@@ -540,9 +538,8 @@ html {
 	font-size: 87.5%;
 }
 body {
-	font-size: 18px;
-	font-size: 1.28571429rem;
-	line-height: 1.33333333;
+	font-size: 14px;
+	font-size: 1rem;
 	font-family: Helvetica, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
 	color: #444;
@@ -571,8 +568,8 @@ a:hover {
 	clip: auto !important;
 	color: #000;
 	display: block;
-	font-size: 15px;
-	font-size: 1.07142857rem;
+	font-size: 12px;
+	font-size: 0.85714286rem;
 	padding: 12px;
 	padding: 0.85714286rem;
 	position: absolute;
@@ -582,21 +579,12 @@ a:hover {
 }
 
 /* Page structure */
-.site-header {
-	background: #c2b08c; /* Old browsers */
-background: -moz-linear-gradient(left,  #c2b08c 0%, #ffffff 5%, #ffffff 95%, #c2b08c 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c2b08c), color-stop(5%,#ffffff), color-stop(95%,#ffffff), color-stop(100%,#c2b08c)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  #c2b08c 0%,#ffffff 5%,#ffffff 95%,#c2b08c 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  #c2b08c 0%,#ffffff 5%,#ffffff 95%,#c2b08c 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  #c2b08c 0%,#ffffff 5%,#ffffff 95%,#c2b08c 100%); /* IE10+ */
-background: linear-gradient(to right,  #c2b08c 0%,#ffffff 5%,#ffffff 95%,#c2b08c 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2b08c', endColorstr='#c2b08c',GradientType=1 ); /* IE6-9 */
-}
 .site {
 	padding: 0;
-	background-color: #fff;
+	background-color: transparent;/*changed from #fff; */
   overflow: visible;
   padding-top: 10px;
+  margin-top: 25px; /*added*/
 }
 .site-content {
     padding-left: 25px;
@@ -609,26 +597,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2b08c', end
 	margin: 1.714285714rem 0 0;
 }
 
-/* Trying to do placeholder text 
-.form-email label:before {
-	content: "example@email.com";
-	position: relative;
-	float: right;
-	top: 28px;
-	right: 45px;
-	opacity: 0.6;
-	font-weight: normal;
-}
-.form-email label:focus:before {
-	color: transparent;
-}
-*/
-
 /* Header */
 .site-header {
-	padding:  0; 
-    padding-top: 20px; 
-    text-align: center; 
+	padding:  0;
+    padding-top: 20px;
+    text-align: center;
 }
 .site-header h1,
 .site-header h2 {
@@ -645,17 +618,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2b08c', end
 	color: #21759b;
 }
 .site-header h1 {
-	font-size: 30px;
-	font-size: 2.14285714rem;
-	line-height: 0.8;
+	font-size: 24px;
+	font-size: 1.714285714rem;
+	line-height: 1.285714286;
 	margin-bottom: 14px;
 	margin-bottom: 1rem;
 }
 .site-header h2 {
 	font-weight: normal;
-	font-size: 16px;
-	font-size: 1.14285714rem;
-	line-height: 1.5;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 1.846153846;
 	color: #757575;
 }
 
@@ -671,12 +644,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2b08c', end
 }
 .main-navigation li {
 	margin: 8px 0 6px 0;
-	font-size: 20px;
-	font-size: 1.42857143rem;
-	line-height: 1.2;
-	padding: 5px;
-	background-color: #384F69;
-	border-radius: 6px;
+	font-size: 16px;
+	line-height: 1.42857143;
+  padding: 5px;
+  background-color: #384F69;
+  border-radius: 6px;
 }
 .main-navigation li a {
     text-decoration: none;
@@ -791,8 +763,7 @@ button{
 	margin: 2px 0px 15px 36px;
 	padding: 10px 20px;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 25px;
-	font-size: 1.78571429rem;
+	font-size: 20px;
 	font-weight: bold;
 	color: #ffffff;
 	white-space: nowrap;
@@ -877,7 +848,7 @@ button:hover{
 	margin-bottom: 15px;
 	margin-bottom: 1.07142857rem;
 	word-wrap: break-word;
-  background-color: #D9D1BA;
+  background-color: transparent;/* changed from #D9D1BA; */
   padding: 10px 10px 10px 20px;
   padding: 0.71428571rem 0.71428571rem 0.71428571rem 1.42857143rem;
   box-sizing: border-box;
@@ -888,25 +859,27 @@ button:hover{
   margin-top: -0.57142857rem;
 }
 .widget-area .widget h3 { /* this is used to change the headers on the side bar */
-  color: #fff;
-  background-color: #C2B08C;
+  color: #13293B; /*changed from #fff; */
+  background-color: transparent;/*changed from #C2B08C; */
 	margin-bottom: 10px;
   margin-left: -20px;
   margin-left: -1.42857143rem;
   margin-top: -10px;
   margin-top: -0.71428571rem;
-  font-size: 18px;
-  font-size: 1.28571429rem;
+  font-size: 16px;
+  font-size: 1.27rem;
   padding: 4px 10px 0 20px;
   width: 900px;
   box-sizing: border-box;
+  border-bottom: ridge;
+
 }
 .widget-area .widget p,
 .widget-area .widget li,
 .widget-area .widget .textwidget {
-	font-size: 16px;
-	font-size: 1.14285714rem;
-	line-height: 1.5;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 1.846153846;
 	list-style-type: circle;   /* added list style type bullets ... nina */
 	
 }
@@ -938,12 +911,12 @@ button:hover{
 /* Footer */
 footer[role="contentinfo"] {
 	clear: both;
-	font-size: 15px;
-	font-size: 1.07142857rem;
-  text-align: center;
+	font-size: 12px;
+	font-size: 0.857142857rem;
+    text-align: center;
 	line-height: 2;
-	max-width: 960px;
-	max-width: 68.571428571rem;
+	max-width: 100%;  /*changed from 960px; */
+	max-width: 100%;  /*changed from 960px; */
 	margin-top: 24px;
 	margin-top: 1.714285714rem;
 	margin-left: auto;
@@ -963,26 +936,26 @@ footer p {
     clear:both;
 }
 .bottom-blue-bar {
-	height: 50px;
-	line-height: 50px;
-	line-height: 3.57142857rem;
-	font-size: 15px;
-	font-size: 1.07142857rem;
-	text-align: center;
-	padding-left: 20px;
-	padding-left: 1.42857143rem;
-	background: #13293B;
-	color: #fff;
-	text-transform:uppercase;
-	float: left;
-	overflow: visible;
-	width:100%;
-	margin-bottom: -40px;
+    height: 50px;
+    line-height: 50px;
+    line-height: 3.57142857rem;
+    font-size: 12px;
+    font-size: 0.85714286rem;
+    text-align: center;
+    padding-left: 20px;
+    padding-left: 1.42857143rem;
+    background: #13293B;
+    color: #fff;
+    text-transform:uppercase;
+    float: left;
+    overflow: visible;
+    width:100%;
+    margin-bottom: -40px;
 }
 .chat {
 	font-family: 'Source Sans Pro', sans-serif;
-    font-size: 26px;
-    font-size: 1.85714286rem;
+    font-size: 21px;
+    font-size: 1.5rem;
     font-weight:bold;
     letter-spacing: 3px;
     letter-spacing: 0.21428571rem;
@@ -1074,9 +1047,9 @@ footer p {
 	margin-bottom: 1.714285714rem;
 }
 .entry-header .entry-title {
-	font-size: 25px;
-	font-size: 1.78571429rem;
-	line-height: 0.96;
+	font-size: 20px;
+	font-size: 1.428571429rem;
+	line-height: 1.2;
 	font-weight: normal;
 }
 .entry-header .entry-title a {
@@ -1090,9 +1063,9 @@ footer p {
 .entry-header .comments-link {
 	margin-top: 24px;
 	margin-top: 1.714285714rem;
-	font-size: 16px;
-	font-size: 1.14285714rem;
-	line-height: 1.5;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 1.846153846;
 	color: #757575;
 }
 .comments-link a,
@@ -1107,9 +1080,9 @@ article.sticky .featured-post {
 	border-top: 4px double #ededed;
 	border-bottom: 4px double #ededed;
 	color: #757575;
-	font-size: 16px;
-	font-size: 1.14285714rem;
-	line-height: 1.5;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 3.692307692;
 	margin-bottom: 24px;
 	margin-bottom: 1.714285714rem;
 	text-align: center;
@@ -1137,40 +1110,40 @@ article.sticky .featured-post {
 }
 .entry-content h1,
 .comment-content h1 {
-	font-size: 26px;
-	font-size: 1.85714286rem;
-	line-height: 0.92307692;
+	font-size: 21px;
+	font-size: 1.5rem;
+	line-height: 1.5;
 }
 .entry-content h2,
 .comment-content h2,
 .mu_register h2 {
-	font-size: 23px;
-	font-size: 1.64285714rem;
-	line-height: 1.04347826;
+	font-size: 18px;
+	font-size: 1.285714286rem;
+	line-height: 1.6;
 }
 .entry-content h3,
 .comment-content h3 {
-	font-size: 20px;
-	font-size: 1.42857143rem;
-	line-height: 1.2;
+	font-size: 16px;
+	font-size: 1.142857143rem;
+	line-height: 1.846153846;
 }
 .entry-content h4,
 .comment-content h4 {
-	font-size: 18px;
-	font-size: 1.28571429rem;
-	line-height: 1.33333333;
+	font-size: 14px;
+	font-size: 1rem;
+	line-height: 1.846153846;
 }
 .entry-content h5,
 .comment-content h5 {
-	font-size: 16px;
-	font-size: 1.14285714rem;
-	line-height: 1.5;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 1.846153846;
 }
 .entry-content h6,
 .comment-content h6 {
-	font-size: 15px;
-	font-size: 1.07142857rem;
-	line-height: 1.6;
+	font-size: 12px;
+	font-size: 0.857142857rem;
+	line-height: 1.846153846;
 }
 .entry-content p,
 .entry-summary p,
@@ -1241,18 +1214,18 @@ iframe {
 .entry-content code,
 .comment-content code {
 	font-family: Consolas, Monaco, Lucida Console, monospace;
-	font-size: 15px;
-	font-size: 1.07142857rem;
-	line-height: 1.6;
+	font-size: 12px;
+	font-size: 0.857142857rem;
+	line-height: 2;
 }
 .entry-content pre,
 .comment-content pre {
 	border: 1px solid #ededed;
 	color: #666;
 	font-family: Consolas, Monaco, Lucida Console, monospace;
-	font-size: 15px;
-	font-size: 1.07142857rem;
-	line-height: 1.6;
+	font-size: 12px;
+	font-size: 0.857142857rem;
+	line-height: 1.714285714;
 	margin: 24px 0;
 	margin: 1.714285714rem 0;
 	overflow: auto;
@@ -1324,17 +1297,17 @@ img.aligncenter,
 .comment-content table {
 	border-bottom: 1px solid #ededed;
 	color: #757575;
-	font-size: 15px;
-	font-size: 1.07142857rem;
-	line-height: 1.6;
+	font-size: 12px;
+	font-size: 0.857142857rem;
+	line-height: 2;
 	margin: 0 0 24px;
 	margin: 0 0 1.714285714rem;
 	width: 100%;
 }
 .entry-content table caption,
 .comment-content table caption {
-	font-size: 20px;
-	font-size: 1.42857143rem;
+	font-size: 16px;
+	font-size: 1.142857143rem;
 	margin: 24px 0;
 	margin: 1.714285714rem 0;
 }
@@ -1350,8 +1323,7 @@ img.aligncenter,
 #glossary-main p {
 	color: #13293B;
 	padding: 15px 20px 15px 15px;
-	font-size: 26px;
-	font-size: 1.85714286rem;
+	font-size: 1.5rem;
 	font-weight: 800;
 }
 #glossary {
@@ -1416,6 +1388,7 @@ img.aligncenter,
 	hyphens: auto;
     color: #13293B;
     background-color: #EEEAE0;
+    box-shadow: 0 0 10px rgba(18, 49, 51, 0.4); /*added box shadow */
 }
 .site-content h1, h2, h3, h4, h5, h6 {
     font-weight: bold !important;
@@ -1427,9 +1400,9 @@ img.aligncenter,
 footer.entry-meta {
 	margin-top: 24px;
 	margin-top: 1.714285714rem;
-	font-size: 16px;
-	font-size: 1.14285714rem;
-	line-height: 1.5;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 1.846153846;
 	color: #757575;
 }
 .single-author .entry-meta .by-author {
@@ -1485,9 +1458,9 @@ footer.entry-meta {
 }
 .archive-meta {
 	color: #757575;
-	font-size: 15px;
-	font-size: 1.07142857rem;
-	line-height: 1.6;
+	font-size: 12px;
+	font-size: 0.857142857rem;
+	line-height: 2;
 	margin-top: 22px;
 	margin-top: 1.571428571rem;
 }
@@ -1538,9 +1511,9 @@ article.format-aside .aside {
 	border-left: 22px solid #a8bfe8;
 }
 article.format-aside p {
-	font-size: 16px;
-	font-size: 1.14285714rem;
-	line-height: 1.5;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 1.846153846;
 	color: #4a5466;
 }
 article.format-aside blockquote:last-child,
@@ -1554,15 +1527,15 @@ article.format-aside p:last-child {
 
 /* Image posts */
 article.format-image footer h1 {
-	font-size: 16px;
-	font-size: 1.14285714rem;
-	line-height: 1.5;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 1.846153846;
 	font-weight: normal;
 }
 article.format-image footer h2 {
-	font-size: 14px;
-	font-size: 1rem;
-	line-height: 1.71428571;
+	font-size: 11px;
+	font-size: 0.785714286rem;
+	line-height: 2.181818182;
 }
 article.format-image footer a h2 {
 	font-weight: normal;
@@ -1573,9 +1546,9 @@ article.format-link header {
 	padding: 0 10px;
 	padding: 0 0.714285714rem;
 	float: right;
-	font-size: 14px;
-	font-size: 1rem;
-	line-height: 1.71428571;
+	font-size: 11px;
+	font-size: 0.785714286rem;
+	line-height: 2.181818182;
 	font-weight: bold;
 	font-style: italic;
 	text-transform: uppercase;
@@ -1588,9 +1561,9 @@ article.format-link .entry-content {
 	float: left;
 }
 article.format-link .entry-content a {
-	font-size: 27px;
-	font-size: 1.92857143rem;
-	line-height: 0.88888889;
+	font-size: 22px;
+	font-size: 1.571428571rem;
+	line-height: 1.090909091;
 	text-decoration: none;
 }
 
@@ -1604,9 +1577,9 @@ article.format-quote .entry-content blockquote {
 	display: block;
 	padding: 24px 24px 0;
 	padding: 1.714285714rem 1.714285714rem 0;
-	font-size: 19px;
-	font-size: 1.35714286rem;
-	line-height: 1.26315789;
+	font-size: 15px;
+	font-size: 1.071428571rem;
+	line-height: 1.6;
 	font-style: normal;
 	color: #6a6a6a;
 	background: #efefef;
@@ -1628,10 +1601,10 @@ article.format-quote .entry-content blockquote {
 	margin: 0;
 }
 .format-status .entry-header h2 {
-	font-size: 19px;
-	font-size: 1.35714286rem;
-	line-height: 1.26315789;
+	font-size: 12px;
+	font-size: 0.857142857rem;
 	font-weight: normal;
+	line-height: 2;
 	margin: 0;
 }
 .format-status .entry-header header a {
@@ -1653,9 +1626,9 @@ article.format-quote .entry-content blockquote {
 .comments-title {
 	margin-bottom: 48px;
 	margin-bottom: 3.428571429rem;
-	font-size: 20px;
-	font-size: 1.42857143rem;
-	line-height: 1.2;
+	font-size: 16px;
+	font-size: 1.142857143rem;
+	line-height: 1.5;
 	font-weight: normal;
 }
 .comments-area article {
@@ -1681,9 +1654,9 @@ article.format-quote .entry-content blockquote {
 }
 .comments-area article header cite {
 	font-style: normal;
-	font-size: 19px;
-	font-size: 1.35714286rem;
-	line-height: 1.26315789;
+	font-size: 15px;
+	font-size: 1.071428571rem;
+	line-height: 1.42857143;
 }
 .comments-area cite b {
 	font-weight: normal;
@@ -1691,8 +1664,8 @@ article.format-quote .entry-content blockquote {
 .comments-area article header time {
 	line-height: 1.714285714;
 	text-decoration: none;
-	font-size: 15px;
-	font-size: 1.07142857rem;
+	font-size: 12px;
+	font-size: 0.857142857rem;
 	color: #5e5e5e;
 }
 .comments-area article header a {
@@ -1714,8 +1687,8 @@ article.format-quote .entry-content blockquote {
 	right: 0;
 	padding: 6px 12px;
 	padding: 0.428571429rem 0.857142857rem;
-	font-size: 15px;
-	font-size: 1.07142857rem;
+	font-size: 12px;
+	font-size: 0.857142857rem;
 	font-weight: normal;
 	color: #fff;
 	background-color: #0088d0;
@@ -1734,8 +1707,8 @@ article.format-quote .entry-content blockquote {
 	margin-left: 0.357142857rem;
 	padding: 2px 5px;
 	padding: 0.142857143rem 0.357142857rem;
-	font-size: 13px;
-	font-size: 0.92857143rem;
+	font-size: 10px;
+	font-size: 0.714285714rem;
 }
 .comments-area .bypostauthor cite b {
 	font-weight: bold;
@@ -1743,9 +1716,9 @@ article.format-quote .entry-content blockquote {
 a.comment-reply-link,
 a.comment-edit-link {
 	color: #686868;
-	font-size: 16px;
-	font-size: 1.14285714rem;
-	line-height: 1.5;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 1.846153846;
 }
 a.comment-reply-link:hover,
 a.comment-edit-link:hover {
@@ -1763,16 +1736,16 @@ a.comment-edit-link:hover {
 	margin-top: 3.428571429rem;
 }
 #respond h3#reply-title {
-	font-size: 20px;
-	font-size: 1.42857143rem;
-	line-height: 1.2;
+	font-size: 16px;
+	font-size: 1.142857143rem;
+	line-height: 1.5;
 }
 #respond h3#reply-title #cancel-comment-reply-link {
 	margin-left: 10px;
 	margin-left: 0.714285714rem;
 	font-weight: normal;
-	font-size: 15px;
-	font-size: 1.07142857rem;
+	font-size: 12px;
+	font-size: 0.857142857rem;
 }
 #respond form {
 	margin: 24px 0;
@@ -1794,18 +1767,17 @@ a.comment-edit-link:hover {
 #respond form textarea {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	font-size: 18px;
-	font-size: 1.28571429rem;
-	line-height: 1.33333333;
+	font-size: 14px;
+	line-height: 1.714285714;
 	padding: 5px 10px;
 	padding: 0.35714286rem;
 	width: 92%;
 }
 #respond form p.form-allowed-tags {
 	margin: 0;
-	font-size: 15px;
-	font-size: 1.07142857rem;
-	line-height: 1.6;
+	font-size: 12px;
+	font-size: 0.857142857rem;
+	line-height: 2;
 	color: #5e5e5e;
 }
 .required {
@@ -1835,9 +1807,9 @@ a.comment-edit-link:hover {
 .template-front-page .widget-area .widget li {
 	margin: 8px 0 0;
 	margin: 0.571428571rem 0 0;
-	font-size: 16px;
-	font-size: 1.14285714rem;
-	line-height: 1.5;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 1.714285714;
 	list-style-type: square;
 	list-style-position: inside;
 }
@@ -1868,17 +1840,17 @@ a.comment-edit-link:hover {
 .widget_recent_entries .post-date,
 .widget_rss .rss-date {
 	color: #aaa;
-	font-size: 14px;
-	font-size: 1rem;
+	font-size: 11px;
+	font-size: 0.785714286rem;
 	margin-left: 12px;
 	margin-left: 0.857142857rem;
 }
 #wp-calendar {
 	margin: 0;
 	width: 100%;
-	font-size: 16px;
-	font-size: 1.14285714rem;
-	line-height: 1.5;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 1.846153846;
 	color: #686868;
 }
 #wp-calendar th,
@@ -1893,9 +1865,9 @@ a.comment-edit-link:hover {
 }
 .widget_search label {
 	display: block;
-	font-size: 16px;
-	font-size: 1.14285714rem;
-	line-height: 1.5;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 1.846153846;
 }
 .widget_twitter li {
 	list-style-type: none;
@@ -1941,8 +1913,8 @@ img#wpstats {
 		height: 3.57142857rem;
 		line-height: 50px;
 		line-height: 3.57142857rem;
-		font-size: 15px;
-		font-size: 1.07142857rem;
+		font-size: 12px;
+		font-size: 0.85714286rem;
 		text-align: left;
 		padding-left: 20px;
 		padding-left: 1.42857143rem;
@@ -1953,39 +1925,39 @@ img#wpstats {
 		overflow: visible;
 		width: 100%;
 		margin-bottom: -40px;
-	}
-	.chat {
-		font-size: 26px;
-		font-size: 1.85714286rem;
-		font-weight: bold;
-		letter-spacing: 3px;
-		letter-spacing: 0.21428571rem;
-		text-transform: uppercase;
-		float: right;
-		color: #fff;
-		background: #13293B;
-		position: relative;
-		bottom: 21px;
-		margin: 0 90px 0 0;
-		margin: 0 6.42857143rem 0 0;
-		padding: 15px 35px;
-		padding: 1.07142857rem 2.5rem;
-		border-radius: 0px;
-		height: 40px;
-	}
-	.header-image {
+  }
+  .chat {
+    font-size: 21px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    letter-spacing: 0.21428571rem;
+    text-transform: uppercase;
+    float: right;
+    color: #fff;
+    background: #13293B;
+    position: relative;
+    bottom: 21px;
+    margin: 0 90px 0 0;
+    margin: 0 6.42857143rem 0 0;
+    padding: 15px 35px;
+    padding: 1.07142857rem 2.5rem;
+    border-radius: 0px;
+    height: 40px;
+  }
+  .header-image {
 		clear:both;
 		margin-left: 20px;
 		margin-left: 1.42857143rem;
-	} 
-	.phone-number {
-		float: right;
-		top: 50px;
-		margin-right: 20px;
-	}
-	.mobile-number {
-		display: none;
-	}
+  } 
+  .phone-number {
+    float: right;
+    top: 50px;
+    margin-right: 20px;
+  }
+  .mobile-number {
+  	display: none;
+  }
 	.author-avatar {
 		float: left;
 		margin-top: 8px;
@@ -1997,12 +1969,12 @@ img#wpstats {
 	}
 	.site {
 		margin: 0 auto;
-		padding: 0;
+    padding: 0;
 		max-width: 960px;
 		max-width: 68.571428571rem;
 	}
 	.site-content {
-		margin-top: 25px;
+    margin-top: 25px;
 		width: 65.104166667%;
 	}
 	body.template-front-page .site-content,
@@ -2011,7 +1983,7 @@ img#wpstats {
 		width: 100%;
 	}
 	.widget-area {
-		width: 29.041666667%;
+		width: 23.042%;
     padding: 10px 0 0 0;
     margin-left: 0;
     margin-top: 33px;
@@ -2025,9 +1997,9 @@ img#wpstats {
 		text-align: left;
 	}
 	.site-header h1 {
-		font-size: 33px;
-		font-size: 2.35714286rem;
-		line-height: 0.72727273;
+		font-size: 26px;
+		font-size: 1.857142857rem;
+		line-height: 1.846153846;
 		margin-bottom: 0;
 	}
   .main-navigation {
@@ -2053,9 +2025,9 @@ img#wpstats {
   .main-navigation li {
     margin-top: 24px;
     margin-top: 1.714285714rem;
-    font-size: 15px;
-		font-size: 1.07142857rem;
-		line-height: 1.6;
+    font-size: 12px;
+    font-size: 0.857142857rem;
+    line-height: 1.42857143;
     padding: 0;
     border-radius: 0;
     background: inherit;
@@ -2213,9 +2185,8 @@ img#wpstats {
   .single-column a {
     padding: 15px 10px !important;
     margin: 0 -15px !important;
-    font-size: 14px;
-		font-size: 1rem;
-		line-height: 1.71428571;
+    line-height: 1.19879 !important;
+    font-size: 11px !important;
   }
    .main-navigation li:hover .single-column {
     opacity:1;
@@ -2234,9 +2205,7 @@ img#wpstats {
     border: 0;
   }
   #legal-resources a {
-    font-size: 14px;
-		font-size: 1rem;
-		line-height: 1.71428571;
+    font-size: 11px !important;
     margin: 0 -5px 0 0 !important;
     padding: 15px 20px !important;
   }
@@ -2295,15 +2264,14 @@ img#wpstats {
 	.main-navigation li ul li a { /* this is used for the sub menus*/
     text-align: left;
 		display: block;
-		font-size: 18px;
-		font-size: 1.28571429rem;
+		font-size: 14px;
 		white-space: inherit;
 		opacity:0.9;
 		filter:alpha(opacity=40); /* For IE8 and earlier */
 	}
   .main-navigation li ul li li a {
-    font-size: 15px;
-		font-size: 1.07142857rem;
+    font-size: 12px;
+    font-size: 0.85714286rem;
     padding: 20px;
     text-align: left; /* change alignment of mega dropdown links */
   }
@@ -2321,9 +2289,8 @@ img#wpstats {
 		display: none;
 	}
 	.entry-header .entry-title {
-		font-size: 27px;
-		font-size: 1.92857143rem;
-		line-height: 0.88888889;
+		font-size: 22px;
+		font-size: 1.571428571rem;
 	}
 	#respond form input[type="text"] {
 		width: 46.333333333%;
@@ -2401,7 +2368,6 @@ img#wpstats {
 		border-radius: 5px;
 		margin:auto;
 		font-size: 30px;
-		font-size: 2.14285714rem;
 		font-weight: bold;
 		text-decoration: none;
 	}
@@ -2543,7 +2509,7 @@ img#wpstats {
 	}
 	body .site { /* this is used to change the main body */
 		padding: 0;
-		box-shadow: 0 0 10px rgba(18, 49, 51, 0.4);
+		/*removed...box-shadow: 0 0 10px rgba(18, 49, 51, 0.4); */
 	}
 	body.custom-background-empty {
 		background-color: #fff;
