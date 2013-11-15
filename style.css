@@ -183,6 +183,7 @@ img {
 .format-status .entry-header:after {
 	display: table;
 	content: "";
+	
 }
 
 
