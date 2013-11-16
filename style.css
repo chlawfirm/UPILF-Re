@@ -582,16 +582,6 @@ a:hover {
 }
 
 /* Page structure */
-.site-header {
-	background: #c2b08c; /* Old browsers */
-background: -moz-linear-gradient(left,  #c2b08c 0%, #ffffff 5%, #ffffff 95%, #c2b08c 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c2b08c), color-stop(5%,#ffffff), color-stop(95%,#ffffff), color-stop(100%,#c2b08c)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  #c2b08c 0%,#ffffff 5%,#ffffff 95%,#c2b08c 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  #c2b08c 0%,#ffffff 5%,#ffffff 95%,#c2b08c 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  #c2b08c 0%,#ffffff 5%,#ffffff 95%,#c2b08c 100%); /* IE10+ */
-background: linear-gradient(to right,  #c2b08c 0%,#ffffff 5%,#ffffff 95%,#c2b08c 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2b08c', endColorstr='#c2b08c',GradientType=1 ); /* IE6-9 */
-}
 .site {
 	padding: 0;
 	background-color: transparent;/*changed from #fff; */
