@@ -594,9 +594,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2b08c', end
 }
 .site {
 	padding: 0;
-	background-color: #fff;
+	background-color: transparent;/*changed from #fff; */
   overflow: visible;
   padding-top: 10px;
+  margin-top: 25px; /*added*/
 }
 .site-content {
     padding-left: 25px;
@@ -888,8 +889,8 @@ button:hover{
   margin-top: -0.57142857rem;
 }
 .widget-area .widget h3 { /* this is used to change the headers on the side bar */
-  color: #fff;
-  background-color: #C2B08C;
+  color: #13293B; /*changed from #fff; */
+  background-color: transparent;/*changed from #C2B08C; */
 	margin-bottom: 10px;
   margin-left: -20px;
   margin-left: -1.42857143rem;
@@ -900,6 +901,7 @@ button:hover{
   padding: 4px 10px 0 20px;
   width: 900px;
   box-sizing: border-box;
+  border-bottom: ridge;
 }
 .widget-area .widget p,
 .widget-area .widget li,
@@ -943,8 +945,8 @@ footer[role="contentinfo"] {
   text-align: center;
 	line-height: 2;
 	max-width: 960px;
-	max-width: 68.571428571rem;
-	margin-top: 24px;
+	max-width: 100%;  /*changed from 960px; */
+	max-width: 100%;  /*changed from 960px; */
 	margin-top: 1.714285714rem;
 	margin-left: auto;
 	margin-right: auto;
@@ -1416,6 +1418,7 @@ img.aligncenter,
 	hyphens: auto;
     color: #13293B;
     background-color: #EEEAE0;
+    box-shadow: 0 0 10px rgba(18, 49, 51, 0.4); /*added box shadow */
 }
 .site-content h1, h2, h3, h4, h5, h6 {
     font-weight: bold !important;
@@ -2543,7 +2546,7 @@ img#wpstats {
 	}
 	body .site { /* this is used to change the main body */
 		padding: 0;
-		box-shadow: 0 0 10px rgba(18, 49, 51, 0.4);
+		/*removed...box-shadow: 0 0 10px rgba(18, 49, 51, 0.4);*/
 	}
 	body.custom-background-empty {
 		background-color: #fff;
