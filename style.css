@@ -728,9 +728,10 @@ section[role="banner"] {
   background: none repeat scroll 0 0 #FFFFFF;
   border: 3px solid #C2B08C;
   height: 17px;
-  width: 81%;
+  width: 150px;
   margin: 0px -5px 15px 0px;
   border-radius: 0;
+  float: right;
 }
 #search:focus {
     outline: 0;
@@ -789,7 +790,7 @@ nav #search {
 /* Side Bar Live Chat Button ... Nina */
 
 button{
-	margin: 2px 0px 15px 36px;
+	margin: -60px 95px 0px 0px;
 	padding: 10px 20px;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 25px;
@@ -799,6 +800,7 @@ button{
 	white-space: nowrap;
 	width: 200px;
 	height: 60px;
+	float: right;
 	
 	background: -moz-linear-gradient(
 		top,
