@@ -117,13 +117,14 @@ section {
 	display: block;
 }
 hgroup .phone-number {
-    position: relative;
+    position: static;
     text-align: center;
     font-size: 43px;
     font-size: 3.07142857rem;
     width: auto;
     font-weight: bold;
     color: #fff;
+    margin-right:90px;
 }
 hgroup h
 audio,
