@@ -663,8 +663,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2b08c', end
 
 /* Navigation Menu */
 .main-navigation {
-	margin-top: 24px;
-	margin-top: 1.714285714rem;
+	margin-top: 66px;
+	margin-top: 4.714rem;
   margin-bottom: -25px;
   margin-bottom: -1.78571429rem;
 	text-align: center;
@@ -730,7 +730,7 @@ section[role="banner"] {
   border: 3px solid #C2B08C;
   height: 17px;
   width: 200px;
-  margin: 13px 2px 0px 22px;
+  margin: 10px 83px 12px 22px;
   border-radius: 0;
   float: right;
 }
@@ -738,7 +738,7 @@ section[role="banner"] {
     outline: 0;
 }
 #search-icon {
-	margin: 13px -275px;
+	margin: 10px -22px 0px 0px;
 	background-color: #C2B08C;
 	width: 35px;
 	float: right;
@@ -885,6 +885,182 @@ button:hover{
 
 /* End Side Bar Live Chat Button ... Nina */
 
+/*BUTTON WIDGETS ...NINA*/
+
+button.orderBttn{
+	margin: 15px 50px 15px 36px;
+	padding: 10px 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+	white-space: nowrap;
+	width: 150px;
+	height: 60px;
+	
+	background: -moz-linear-gradient(
+		top,
+		#cc3333 0%,
+		#993333);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#cc3333),
+		to(#993333));
+    background: -ms-linear-gradient(
+        top, 
+        #cc3333 0%, 
+        #993333 100%);
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #c2bebe;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		-1px -1px 0px rgba(000,000,000,0.2),
+		0px 0px 0px rgba(255,255,255,0.9);
+}
+#secondary button.orderBttn:hover {
+	color: #5e5e5e;
+	background-color: #ebebeb;
+    background: -moz-linear-gradient(
+		top,
+		#993333 0%,
+		#cc3333);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#993333),
+        to(#cc3333));
+    background: -ms-linear-gradient(
+        top, 
+        #993333 0%, 
+        #cc3333 100%);
+}
+/*meet us buttons*/
+button.meet-us{
+	margin: 15px 50px 15px 36px;
+	padding: 10px 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+	white-space: nowrap;
+	width: 150px;
+	height: 60px;
+	
+	background: -moz-linear-gradient(
+		top,
+		#cc3333 0%,
+		#993333);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#cc3333),
+		to(#993333));
+    background: -ms-linear-gradient(
+        top, 
+        #cc3333 0%, 
+        #993333 100%);
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #c2bebe;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		-1px -1px 0px rgba(000,000,000,0.2),
+		0px 0px 0px rgba(255,255,255,0.9);
+}
+#secondary button.meet-us:hover {
+	color: #5e5e5e;
+	background-color: #ebebeb;
+    background: -moz-linear-gradient(
+		top,
+		#993333 0%,
+		#cc3333);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#993333),
+        to(#cc3333));
+    background: -ms-linear-gradient(
+        top, 
+        #993333 0%, 
+        #cc3333 100%);
+}
+
+/*testimonial button*/
+button.testimonial-bttn{
+	margin: 15px 50px 15px 36px;
+	padding: 10px 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+	white-space: nowrap;
+	width: 150px;
+	height: 60px;
+	
+	background: -moz-linear-gradient(
+		top,
+		#cc3333 0%,
+		#993333);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#cc3333),
+		to(#993333));
+    background: -ms-linear-gradient(
+        top, 
+        #cc3333 0%, 
+        #993333 100%);
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #c2bebe;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		-1px -1px 0px rgba(000,000,000,0.2),
+		0px 0px 0px rgba(255,255,255,0.9);
+}
+#secondary button.testimonial-bttn:hover {
+	color: #5e5e5e;
+	background-color: #ebebeb;
+    background: -moz-linear-gradient(
+		top,
+		#993333 0%,
+		#cc3333);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#993333),
+        to(#cc3333));
+    background: -ms-linear-gradient(
+        top, 
+        #993333 0%, 
+        #cc3333 100%);
+}
+
+
+/*END OF WIDGET BUTTONS.....Nina*/
 
 
 /* 	==============END STYLE FOR SEARCH RESULTS =============================*/
@@ -899,7 +1075,7 @@ button:hover{
 	margin-bottom: 15px;
 	margin-bottom: 1.07142857rem;
 	word-wrap: break-word;
-  background-color: #D9D1BA;
+  background-color: transparent;
   padding: 10px 10px 10px 20px;
   padding: 0.71428571rem 0.71428571rem 0.71428571rem 1.42857143rem;
   box-sizing: border-box;
@@ -1088,6 +1264,7 @@ footer p {
 	clear: both;
 }
 .entry-header {
+	margin-top: 4.714rem;
 	margin-bottom: 24px;
 	margin-bottom: 1.714285714rem;
     text-transform: uppercase;
@@ -2022,8 +2199,8 @@ img#wpstats {
 	.site {
 		margin: 0 auto;
 		padding: 0;
-		max-width: 960px;
-		max-width: 68.571428571rem;
+		max-width: 1200px;
+		max-width: 85.71428571rem;
 	}
 	.site-content {
 		margin-top: 25px;
