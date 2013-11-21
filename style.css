@@ -794,6 +794,99 @@ nav #search {
 
 /* Live Chat Button ... Nina */
 
+button{
+	margin: -75px 0px 0px 0px;
+	padding: 10px 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 25px;
+	font-size: 1.78571429rem;
+	font-weight: bold;
+	color: #ffffff;
+	white-space: nowrap;
+	width: 200px;
+	height: 60px;
+	float: right;
+	
+	background: -moz-linear-gradient(
+		top,
+		#d9d1ba 0%,
+		#c2b08c);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#d9d1ba),
+		to(#c2b08c));
+    background: -ms-linear-gradient(
+        top, 
+        #d9d1ba 0%, 
+        #c2b08c 100%);
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #c2bebe;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		-1px -1px 0px rgba(000,000,000,0.2),
+		0px 0px 0px rgba(255,255,255,0.9);
+}
+button:hover {
+    background: -moz-linear-gradient(
+		top,
+		#c2b08c 0%,
+		#d9d1ba);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#c2b08c),
+        to(#d9d1ba));
+    background: -ms-linear-gradient(
+        top, 
+        #c2b08c 0%, 
+        #d9d1ba 100%);
+}
+#secondary button:hover {
+    background: -moz-linear-gradient(
+		top,
+		#c2b08c 0%,
+		#d9d1ba);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#c2b08c),
+        to(#d9d1ba));
+    background: -ms-linear-gradient(
+        top, 
+        #c2b08c 0%, 
+        #d9d1ba 100%);
+}
+button:before {
+    content: url(/wp-content/uploads/sites/4/2013/11/cartoonspeech_bubble.png);
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+button:after {
+    content: url(/wp-content/uploads/sites/4/2013/11/indicatorLight.png);
+    margin-left: 10px;
+}
+
+
+button em.rightImage{
+
+}
+button:hover{
+	background-color: #f5eedb;
+}
+
+/* End Side Bar Live Chat Button ... Nina */
+
+/*BUTTON WIDGETS ...NINA*/
+
 button.orderBttn{
 	margin: 15px 50px 15px 36px;
 	padding: 10px 20px;
@@ -1017,7 +1110,7 @@ button.testimonial-bttn:after {
   margin-top: -8px;
   margin-top: -0.57142857rem;
 }
-.widget-area .widget h3 { /* this is used to change the headers on the side bar */
+.widget-area .widget h2 { /* this is used to change the headers on the side bar... was h3*/
   color: #13293B; /*changed from #fff; */
   background-color: transparent;/*changed from #C2B08C; */
 	margin-bottom: 10px;
@@ -2101,8 +2194,15 @@ img#wpstats {
 		overflow: visible;
 		width: 100%;
 		margin-bottom: -40px;
+		display:inline-flex;/*testing*/
+	}
+	.bottom-blue-bar .name{
+		margin: 1px 2px 3px 4px;/*testing*/
 	}
 
+	.bottom-blue-bar .footer-address{
+		margin: 1px 2px 3px 4px;  /*testing*/
+	}
 
 	.chat {
 		font-size: 26px;
