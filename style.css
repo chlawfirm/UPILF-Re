@@ -116,15 +116,22 @@ nav,
 section {
 	display: block;
 }
+
+hgroup{/*This centers the header content with .site*/
+	display: block;
+	margin-left: 357px;
+	max-width: 1200px;
+}
+
 hgroup .phone-number {
-    position: static;
+    position: relative;
     text-align: center;
-    font-size: 43px;
-    font-size: 3.07142857rem;
+    font-size: 36px;
+    font-size: 2.57142857rem;
     width: auto;
     font-weight: bold;
     color: #fff;
-    margin-right:90px;
+    margin-right:0px;
 }
 hgroup h
 audio,
@@ -584,14 +591,7 @@ a:hover {
 
 /* Page structure */
 .site-header {
-	background: #c2b08c; /* Old browsers */
-background: -moz-linear-gradient(left,  #c2b08c 0%, #ffffff 5%, #ffffff 95%, #c2b08c 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c2b08c), color-stop(5%,#ffffff), color-stop(95%,#ffffff), color-stop(100%,#c2b08c)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  #c2b08c 0%,#ffffff 5%,#ffffff 95%,#c2b08c 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  #c2b08c 0%,#ffffff 5%,#ffffff 95%,#c2b08c 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  #c2b08c 0%,#ffffff 5%,#ffffff 95%,#c2b08c 100%); /* IE10+ */
-background: linear-gradient(to right,  #c2b08c 0%,#ffffff 5%,#ffffff 95%,#c2b08c 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2b08c', endColorstr='#c2b08c',GradientType=1 ); /* IE6-9 */
+	background: transparent;/*#c2b08c; Old browsers */
 }
 .site {
 	padding: 0;
@@ -728,19 +728,19 @@ section[role="banner"] {
 #search {
   background: none repeat scroll 0 0 #FFFFFF;
   border: 3px solid #C2B08C;
-  height: 17px;
+  height: 22px;
   width: 200px;
-  margin: 10px 83px 12px 22px;
+  margin: 10px 0px 25px 0px;
   border-radius: 0;
-  float: right;
+  float: left;
 }
 #search:focus {
     outline: 0;
 }
 #search-icon {
-	margin: 10px -22px 0px 0px;
+	margin: 10px 0px 0px 0px;
 	background-color: #C2B08C;
-	width: 35px;
+	width: 40px;
 	float: right;
 }
 
@@ -752,8 +752,8 @@ nav #search {
 }
 
 .search-form {
-	float: right;
-	margin: 1px 2px 3px 4px;
+	float: left;
+	margin: 1px 0px 0px 15px;
 }
 #site-navigation > button { /* This is to hide the Live Chat button in header navigation - Dave */
     display: none;
@@ -795,7 +795,7 @@ nav #search {
 /* Live Chat Button ... Nina */
 
 button{
-	margin: -60px 95px 0px 0px;
+	margin: -75px 0px 0px 0px;
 	padding: 10px 20px;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 25px;
@@ -1160,6 +1160,8 @@ footer[role="contentinfo"] a:hover {
 }
 footer p {
     clear:both;
+    max-width: 1200px;
+    margin-left: 357px;
 }
 .bottom-blue-bar {
 	height: 50px;
@@ -2145,8 +2147,8 @@ img#wpstats {
 		font-size: 15px;
 		font-size: 1.07142857rem;
 		text-align: left;
-		padding-left: 20px;
-		padding-left: 1.42857143rem;
+		padding-left: 370px;
+		padding-left: 26.429rem;
 		background: #13293B;
 		color: #fff;
 		text-transform:uppercase;
@@ -2167,8 +2169,8 @@ img#wpstats {
 		background: #13293B;
 		position: relative;
 		bottom: 21px;
-		margin: 0 90px 0 0;
-		margin: 0 6.42857143rem 0 0;
+		margin: 0 370px 0 0;
+		margin: 0 26.429rem 0 0;
 		padding: 15px 35px;
 		padding: 1.07142857rem 2.5rem;
 		border-radius: 0px;
