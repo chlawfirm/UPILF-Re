@@ -1320,7 +1320,9 @@ article.sticky .featured-post {
 iframe {
     border: 10px solid #010101;
     border-radius: 15px;
-    box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 }
 .entry-content a:visited,
 .comment-content a:visited {
@@ -1584,7 +1586,7 @@ footer.entry-meta {
 }
 #vbVideo {
 	float: left;
-	width: 57%;
+	width: 58%;
 	padding: 5px;
 	min-height: 400px;
 }
