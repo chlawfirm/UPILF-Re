@@ -1660,7 +1660,7 @@ footer.entry-meta {
 	float: right;
 	width: 37%;
 	padding: 5px;
-	min-height: 400px;
+	margin-top: 105px;
 }
 #vbThumbs {
 	background-color: #384F69;
@@ -1673,6 +1673,18 @@ footer.entry-meta {
 #vbThumbs li {
 	list-style: none;
 	display: inline-block;
+	margin:-66px 35px -12px 45px;
+}
+.vbContents {
+  position: relative;
+}
+.vbTestContent:before {
+  content: "“";
+  font-size: 120px;
+  left: -17px;
+  opacity: 0.35;
+  position: absolute;
+  top: -80px;
 }
 /* =Archives
 -------------------------------------------------------------- */
