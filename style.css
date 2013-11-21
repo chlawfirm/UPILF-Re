@@ -116,22 +116,15 @@ nav,
 section {
 	display: block;
 }
-
-hgroup{/*This centers the header content with .site*/
-	display: block;
-	margin-left: 357px;
-	max-width: 1200px;
-}
-
 hgroup .phone-number {
-    position: relative;
+    position: static;
     text-align: center;
-    font-size: 36px;
-    font-size: 2.57142857rem;
+    font-size: 43px;
+    font-size: 3.07142857rem;
     width: auto;
     font-weight: bold;
     color: #fff;
-    margin-right:0px;
+    margin-right:90px;
 }
 hgroup h
 audio,
@@ -506,10 +499,6 @@ img.wp-smiley,
 	margin: 48px 0;
 	margin: 3.428571429rem 0;
 }
-.menu-test1-container {
-	position: relative;
-	top: -10px;
-}
 
 /* Author profiles */
 .author .archive-header {
@@ -591,7 +580,7 @@ a:hover {
 
 /* Page structure */
 .site-header {
-	background: transparent;/*#c2b08c; Old browsers */
+	
 }
 .site {
 	padding: 0;
@@ -610,21 +599,6 @@ a:hover {
 	margin: 24px 0 0;
 	margin: 1.714285714rem 0 0;
 }
-
-/* Trying to do placeholder text 
-.form-email label:before {
-	content: "example@email.com";
-	position: relative;
-	float: right;
-	top: 28px;
-	right: 45px;
-	opacity: 0.6;
-	font-weight: normal;
-}
-.form-email label:focus:before {
-	color: transparent;
-}
-*/
 
 /* Header */
 .site-header {
@@ -728,19 +702,19 @@ section[role="banner"] {
 #search {
   background: none repeat scroll 0 0 #FFFFFF;
   border: 3px solid #C2B08C;
-  height: 22px;
+  height: 17px;
   width: 200px;
-  margin: 10px 0px 25px 0px;
+  margin: 10px 83px 12px 22px;
   border-radius: 0;
-  float: left;
+  float: right;
 }
 #search:focus {
     outline: 0;
 }
 #search-icon {
-	margin: 10px 0px 0px 0px;
+	margin: 10px -22px 0px 0px;
 	background-color: #C2B08C;
-	width: 40px;
+	width: 35px;
 	float: right;
 }
 
@@ -752,8 +726,8 @@ nav #search {
 }
 
 .search-form {
-	float: left;
-	margin: 1px 0px 0px 15px;
+	float: right;
+	margin: 1px 2px 3px 4px;
 }
 #site-navigation > button { /* This is to hide the Live Chat button in header navigation - Dave */
     display: none;
@@ -795,7 +769,7 @@ nav #search {
 /* Live Chat Button ... Nina */
 
 button{
-	margin: -75px 0px 0px 0px;
+	margin: -60px 95px 0px 0px;
 	padding: 10px 20px;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 25px;
@@ -1160,8 +1134,6 @@ footer[role="contentinfo"] a:hover {
 }
 footer p {
     clear:both;
-    max-width: 1200px;
-    margin-left: 357px;
 }
 .bottom-blue-bar {
 	height: 50px;
@@ -1652,14 +1624,12 @@ footer.entry-meta {
 }
 #vbVideo {
 	float: left;
-	border: 2px solid yellow;
 	width: 57%;
 	padding: 5px;
 	min-height: 400px;
 }
 #vbTest {
 	float: right;
-	border: 2px solid yellow;
 	width: 37%;
 	padding: 5px;
 	min-height: 400px;
@@ -1674,6 +1644,7 @@ footer.entry-meta {
 }
 #vbThumbs li {
 	list-style: none;
+	display: inline-block;
 }
 /* =Archives
 -------------------------------------------------------------- */
@@ -2147,8 +2118,8 @@ img#wpstats {
 		font-size: 15px;
 		font-size: 1.07142857rem;
 		text-align: left;
-		padding-left: 370px;
-		padding-left: 26.429rem;
+		padding-left: 20px;
+		padding-left: 1.42857143rem;
 		background: #13293B;
 		color: #fff;
 		text-transform:uppercase;
@@ -2169,8 +2140,8 @@ img#wpstats {
 		background: #13293B;
 		position: relative;
 		bottom: 21px;
-		margin: 0 370px 0 0;
-		margin: 0 26.429rem 0 0;
+		margin: 0 90px 0 0;
+		margin: 0 6.42857143rem 0 0;
 		padding: 15px 35px;
 		padding: 1.07142857rem 2.5rem;
 		border-radius: 0px;
@@ -2296,7 +2267,7 @@ img#wpstats {
 	.main-navigation li { /* used to control spacing for the nav bar */
 		display: inline-block;
 		text-decoration: none;
-    max-width: 160px;
+    max-width: 186px;
     margin-left: -20px;
     margin-left: -1.42857143rem;
     padding-left: 20px;
@@ -2310,7 +2281,6 @@ img#wpstats {
     margin: 0;
 		position: relative;
     float: left;
-    font-weight: bold
   }
 	.main-navigation li a {
 		border-bottom: 0;
@@ -2353,20 +2323,25 @@ img#wpstats {
 		padding: 0;
 		position: absolute;
 		top: 100%;
-    left:0px;
+    left: 0px;
 		z-index: 51;
 	}
   .mega-dropdown {
-    left:-999em;
-    position:absolute;
-    height:400px;
-    width:535px;
+    left: -999em;
+    position: absolute;
+    height: 400px;
+    width :609px;
     background: #13293B;
-    overflow:hidden;
+    overflow: hidden;
     padding: 0 12px !important;
     z-index: 51;
-		opacity:0.9;
+		opacity: 0.9;
 		filter:alpha(opacity=40); /* For IE8 and earlier */
+  }
+  .mega-dropdown > li {
+  	font-size: 18px;
+  	padding: 6px 20px 0 0;
+  	color: #fff;
   }
   .main-navigation li:hover .mega-dropdown {
     left:0;
@@ -2374,7 +2349,7 @@ img#wpstats {
   }
   .mega-dropdown li {
     max-width: 345px !important;
-    width: 150px;
+    width: 175px;
     display: inline-block;
     white-space: nowrap;
     padding-left: 8px;
@@ -2401,6 +2376,7 @@ img#wpstats {
   }
   .mega-dropdown ul {
     border-top: 3px solid #4A6D8A;
+    width: 203px !important;
   }
   .single-column {
     opacity:0;
@@ -2418,7 +2394,8 @@ img#wpstats {
     margin: 0 -15px !important;
     font-size: 14px;
 		font-size: 1rem;
-		line-height: 1.71428571;
+		line-height: 1.4 !important;
+		text-align: center !important;
   }
    .main-navigation li:hover .single-column {
     opacity:1;
@@ -2498,15 +2475,13 @@ img#wpstats {
 	.main-navigation li ul li a { /* this is used for the sub menus*/
     text-align: left;
 		display: block;
-		font-size: 18px;
-		font-size: 1.28571429rem;
 		white-space: inherit;
 		opacity:0.9;
 		filter:alpha(opacity=40); /* For IE8 and earlier */
 	}
   .main-navigation li ul li li a {
-    font-size: 15px;
-		font-size: 1.07142857rem;
+    font-size: 14px;
+		font-size: 1rem;
     padding: 20px;
     text-align: left; /* change alignment of mega dropdown links */
   }
