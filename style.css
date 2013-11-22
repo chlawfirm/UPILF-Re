@@ -297,7 +297,7 @@ input[type="submit"]:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 article.post-password-required input[type=submit]:hover {
-	color: #5e5e5e;
+	color: #fff;
 	background-color: #ebebeb;
 	background-repeat: repeat-x;
 	background-image: -moz-linear-gradient(top, #f9f9f9, #ebebeb);
@@ -924,7 +924,7 @@ button.orderBttn{
 		0px 0px 0px rgba(255,255,255,0.9);
 }
 #secondary button.orderBttn:hover {
-	color: #5e5e5e;
+	color: #fff;
 	background-color: #ebebeb;
     background: -moz-linear-gradient(
 		top,
@@ -990,7 +990,7 @@ button.meet-us{
 		0px 0px 0px rgba(255,255,255,0.9);
 }
 #secondary button.meet-us:hover {
-	color: #5e5e5e;
+	color: #fff;
 	background-color: #ebebeb;
     background: -moz-linear-gradient(
 		top,
@@ -1056,7 +1056,7 @@ button.testimonial-bttn{
 		0px 0px 0px rgba(255,255,255,0.9);
 }
 #secondary button.testimonial-bttn:hover {
-	color: #5e5e5e;
+	color: #fff;
 	background-color: #ebebeb;
     background: -moz-linear-gradient(
 		top,
@@ -1407,7 +1407,7 @@ article.sticky .featured-post {
 
 
 iframe {
-    border: 10px solid #010101;
+    border: 5px solid #010101;
     border-radius: 15px;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
@@ -1665,19 +1665,25 @@ footer.entry-meta {
 	color: #757575;
 	font-weight: normal;
 }
-
-#vbBody {
+#vb {
 	background-color: #384F69;
+}
+#vbTitle {
+	color: #fff;
+	font-size: 26px;
+	padding-top: 15px;
+	text-align: center;
+}
+#vbBody {
 	color: #fff;
 	padding: 10px;
-	height: 420px;
+	height: 360px;
 
 }
 #vbVideo {
 	float: left;
 	width: 58%;
 	padding: 5px;
-	min-height: 400px;
 }
 #vbTest {
 	float: right;
@@ -1686,9 +1692,9 @@ footer.entry-meta {
 	margin-top: 105px;
 }
 #vbThumbs {
-	background-color: #384F69;
-	color: #fff;
-	padding: 10px;
+  color: #FFFFFF;
+  padding: 15px 10px 0 10px;
+  height: 65px;
 }
 #vbThumbs a {
 	color: #fff;
