@@ -506,10 +506,6 @@ img.wp-smiley,
 	margin: 48px 0;
 	margin: 3.428571429rem 0;
 }
-.menu-test1-container {
-	position: relative;
-	top: -10px;
-}
 
 /* Author profiles */
 .author .archive-header {
@@ -2406,7 +2402,7 @@ img#wpstats {
     left: -999em;
     position: absolute;
     height: 400px;
-    width: 535px;
+    width: 609px;
     background: #13293B;
     overflow: hidden;
     padding: 0 12px !important;
@@ -2472,7 +2468,7 @@ img#wpstats {
     font-size: 14px;
 		font-size: 1rem;
 		line-height: 1.4 !important;
-		text-align: center;
+		text-align: center !important;
   }
    .main-navigation li:hover .single-column {
     opacity:1;
