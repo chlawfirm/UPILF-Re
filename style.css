@@ -212,7 +212,11 @@ img {
 	text-transform: uppercase;
 	color: #636363;
 }
-
+.widget-title{/* this styles the headers for the side bar widgets only */
+	font-size: 16px;
+	color: #13293B;
+	border-bottom: ridge;
+}
 /* Shared Post Format styling */
 article.format-quote footer.entry-meta,
 article.format-link footer.entry-meta,
@@ -297,7 +301,7 @@ input[type="submit"]:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 article.post-password-required input[type=submit]:hover {
-	color: #5e5e5e;
+	color: #fff;
 	background-color: #ebebeb;
 	background-repeat: repeat-x;
 	background-image: -moz-linear-gradient(top, #f9f9f9, #ebebeb);
@@ -506,10 +510,6 @@ img.wp-smiley,
 	margin: 48px 0;
 	margin: 3.428571429rem 0;
 }
-.menu-test1-container {
-	position: relative;
-	top: -10px;
-}
 
 /* Author profiles */
 .author .archive-header {
@@ -663,8 +663,8 @@ a:hover {
 
 /* Navigation Menu */
 .main-navigation {
-	margin-top: 66px;
-	margin-top: 4.714rem;
+	margin-top: 52px;
+	margin-top: 3.714rem;
   margin-bottom: -25px;
   margin-bottom: -1.78571429rem;
 	text-align: center;
@@ -928,7 +928,7 @@ button.orderBttn{
 		0px 0px 0px rgba(255,255,255,0.9);
 }
 #secondary button.orderBttn:hover {
-	color: #5e5e5e;
+	color: #fff;
 	background-color: #ebebeb;
     background: -moz-linear-gradient(
 		top,
@@ -994,7 +994,7 @@ button.meet-us{
 		0px 0px 0px rgba(255,255,255,0.9);
 }
 #secondary button.meet-us:hover {
-	color: #5e5e5e;
+	color: #fff;
 	background-color: #ebebeb;
     background: -moz-linear-gradient(
 		top,
@@ -1060,7 +1060,7 @@ button.testimonial-bttn{
 		0px 0px 0px rgba(255,255,255,0.9);
 }
 #secondary button.testimonial-bttn:hover {
-	color: #5e5e5e;
+	color: #fff;
 	background-color: #ebebeb;
     background: -moz-linear-gradient(
 		top,
@@ -1411,7 +1411,7 @@ article.sticky .featured-post {
 
 
 iframe {
-    border: 10px solid #010101;
+    border: 5px solid #010101;
     border-radius: 15px;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
@@ -1669,19 +1669,33 @@ footer.entry-meta {
 	color: #757575;
 	font-weight: normal;
 }
-
-#vbBody {
+#vb {
 	background-color: #384F69;
+}
+#vbTitle {
+	color: #fff;
+	font-size: 26px;
+	padding-top: 15px;
+	text-align: center;
+}
+#vbBody {
 	color: #fff;
 	padding: 10px;
-	height: 420px;
+<<<<<<< HEAD
+	height: 385px;
+=======
+	height: 360px;
+>>>>>>> b1afcf0cea9298c3be45194b994c0abd9b1863fe
 
 }
 #vbVideo {
 	float: left;
 	width: 58%;
 	padding: 5px;
-	min-height: 400px;
+<<<<<<< HEAD
+	min-height: 338px;
+=======
+>>>>>>> b1afcf0cea9298c3be45194b994c0abd9b1863fe
 }
 #vbTest {
 	float: right;
@@ -1690,9 +1704,9 @@ footer.entry-meta {
 	margin-top: 105px;
 }
 #vbThumbs {
-	background-color: #384F69;
-	color: #fff;
-	padding: 10px;
+  color: #FFFFFF;
+  padding: 15px 10px 0 10px;
+  height: 65px;
 }
 #vbThumbs a {
 	color: #fff;
@@ -2221,7 +2235,7 @@ img#wpstats {
 		padding: 15px 35px;
 		padding: 1.07142857rem 2.5rem;
 		border-radius: 0px;
-		height: 40px;
+		height: 50px;
 	}
 	.header-image {
 		clear:both;
@@ -2406,7 +2420,7 @@ img#wpstats {
     left: -999em;
     position: absolute;
     height: 400px;
-    width: 535px;
+    width: 609px;
     background: #13293B;
     overflow: hidden;
     padding: 0 12px !important;
@@ -2472,7 +2486,7 @@ img#wpstats {
     font-size: 14px;
 		font-size: 1rem;
 		line-height: 1.4 !important;
-		text-align: center;
+		text-align: center !important;
   }
    .main-navigation li:hover .single-column {
     opacity:1;
