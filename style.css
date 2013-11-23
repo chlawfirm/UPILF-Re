@@ -119,7 +119,7 @@ section {
 
 hgroup{/*This centers the header content with .site*/
 	display: block;
-	margin-left: 357px;
+	margin: auto;
 	max-width: 1200px;
 }
 
@@ -554,6 +554,14 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
 	color: #444;
+	background: #c2b08c !important; /* Old browsers */
+	background: -moz-linear-gradient(left,  #c2b08c 0%, #fff7dd 51%, #c2b08c 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c2b08c), color-stop(51%,#fff7dd), color-stop(100%,#c2b08c)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #c2b08c 0%,#fff7dd 51%,#c2b08c 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #c2b08c 0%,#fff7dd 51%,#c2b08c 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #c2b08c 0%,#fff7dd 51%,#c2b08c 100%) !important; /* IE10+ */
+	background: linear-gradient(to right,  #c2b08c 0%,#fff7dd 51%,#c2b08c 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2b08c', endColorstr='#c2b08c',GradientType=1 ) !important; /* IE6-9 */
 }
 body.custom-font-enabled {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -1254,8 +1262,10 @@ footer p {
 /* =Main content and comment content
 -------------------------------------------------------------- */
 .img-slider {
-	margin-left: -37px;
+	margin-left: -38px;
 	margin-bottom: -50px;
+	background-color: #EEEAE0;
+	box-shadow: 0 0 10px rgba(10, 49, 51, 0.4);
 }
 .site-content > .flex-control-nav li {
 	height: 10px;
@@ -1635,18 +1645,19 @@ img.aligncenter,
 .site-content article { /* this is used to change the article part */
 	margin-bottom: 72px;
 	margin-bottom: 5.142857143rem;
-    margin-left: -38px;
-    margin-left: -2.71428571rem;
-	padding: 24px;
-	padding: 1.714285714rem;
+	margin-left: -38px;
+	margin-left: -2.71428571rem;
+	padding: 1px 24px 24px 24px;
+	padding: 0.07142857rem 1.71429rem 1.71429rem 1.71429rem;
 	word-wrap: break-word;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
-    color: #13293B;
-    background-color: #EEEAE0;
-    box-shadow: 0 0 10px rgba(18, 49, 51, 0.4); /*added box shadow */
+	color: #13293B;
+	background-color: #EEEAE0;
+	box-shadow: 0 0 10px rgba(18, 49, 51, 0.4); /*added box shadow */
 }
+
 .site-content h1, h2, h3, h4, h5, h6 {
     font-weight: bold !important;
 }
@@ -1682,10 +1693,14 @@ footer.entry-meta {
 	color: #fff;
 	padding: 10px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	height: 385px;
 =======
 	height: 360px;
 >>>>>>> b1afcf0cea9298c3be45194b994c0abd9b1863fe
+=======
+	height: 360px;
+>>>>>>> 39e28bc66c3e3ae5de8737186ff7d187ad05b46d
 
 }
 #vbVideo {
@@ -1693,9 +1708,12 @@ footer.entry-meta {
 	width: 58%;
 	padding: 5px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	min-height: 338px;
 =======
 >>>>>>> b1afcf0cea9298c3be45194b994c0abd9b1863fe
+=======
+>>>>>>> 39e28bc66c3e3ae5de8737186ff7d187ad05b46d
 }
 #vbTest {
 	float: right;
@@ -2749,12 +2767,14 @@ img#wpstats {
 	}
 	.img-slider {
   	margin-left: -37px;
-  	margin-bottom: -50px;
+  	margin-bottom: -40px;
+  	background-color: #EEEAE0;
+  	box-shadow: 0 0 10px rgba(10, 49, 51, 0.4);
   }
 }
 /* This is to make the nubmer move above the logo
  and center when the screen is small enough*/
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 1070px) {
 	.phone-number {
 		float: none;
 		top: 0;
@@ -2795,21 +2815,8 @@ img#wpstats {
 	}
 }
 
-
-
 /* Minimum width of 960 pixels. */
 @media screen and (min-width: 960px) {
-	/* Sets gradient background for the whole world */
-	body {
-		background: #c2b08c !important; /* Old browsers */
-		background: -moz-linear-gradient(left,  #c2b08c 0%, #fff7dd 51%, #c2b08c 100%) !important; /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c2b08c), color-stop(51%,#fff7dd), color-stop(100%,#c2b08c)) !important; /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(left,  #c2b08c 0%,#fff7dd 51%,#c2b08c 100%) !important; /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(left,  #c2b08c 0%,#fff7dd 51%,#c2b08c 100%) !important; /* Opera 11.10+ */
-		background: -ms-linear-gradient(left,  #c2b08c 0%,#fff7dd 51%,#c2b08c 100%) !important; /* IE10+ */
-		background: linear-gradient(to right,  #c2b08c 0%,#fff7dd 51%,#c2b08c 100%) !important; /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2b08c', endColorstr='#c2b08c',GradientType=1 ) !important; /* IE6-9 */
-	}
 	body .site { /* this is used to change the main body */
 		padding: 0;
 		/*removed...box-shadow: 0 0 10px rgba(18, 49, 51, 0.4);*/
