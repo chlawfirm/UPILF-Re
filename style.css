@@ -763,6 +763,12 @@ nav #search {
 	float: left;
 	margin: 1px 0px 0px 15px;
 }
+
+.feildset{/* this is for the feildset box.  To remove the beveled border style*/
+	border-style: none;
+
+}
+
 #site-navigation > button { /* This is to hide the Live Chat button in header navigation - Dave */
     display: none;
 }
@@ -2281,7 +2287,7 @@ img#wpstats {
 		width: 100%;
 	}
 	.widget-area {
-		width: 23.042%;/*changed from...29.041666667%; */
+		width: 26.042%;/*changed from...29.041666667%; */
     padding: 10px 0 0 0;
     margin-left: 0;
     margin-top: 33px;
