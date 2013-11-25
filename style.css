@@ -562,6 +562,7 @@ body {
 	background: -ms-linear-gradient(left,  #c2b08c 0%,#fff7dd 51%,#c2b08c 100%) !important; /* IE10+ */
 	background: linear-gradient(to right,  #c2b08c 0%,#fff7dd 51%,#c2b08c 100%) !important; /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2b08c', endColorstr='#c2b08c',GradientType=1 ) !important; /* IE6-9 */
+	margin: 0;
 }
 body.custom-font-enabled {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -1690,7 +1691,6 @@ footer.entry-meta {
 	text-align: center;
 }
 #vbBody {
-	background-color: #384F69;
 	color: #fff;
 	padding: 10px;
 	height: 390px;
@@ -1700,8 +1700,6 @@ footer.entry-meta {
 	float: left;
 	width: 58%;
 	padding: 5px;
-	min-height: 338px;
-
 }
 #vbTest {
 	float: right;
@@ -2241,7 +2239,7 @@ img#wpstats {
 		padding: 15px 35px;
 		padding: 1.07142857rem 2.5rem;
 		border-radius: 0px;
-		height: 50px;
+		height: 50px; /* If 50 doesnt work, try 40 */
 	}
 	.header-image {
 		clear:both;
