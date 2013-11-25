@@ -694,9 +694,6 @@ a:hover {
     padding: 10px 45px;
     border-radius: 6px;
 }
-.main-navigation li:hover{
-    background: #676B77;
-}
 .main-navigation li a:hover {
     color: #fff;
 }
@@ -762,13 +759,10 @@ nav #search {
 
 .search-form {
 	float: left;
-	margin: 1px 0px 0px 15px;
+	margin: 1px 20px 0 15px;
 }
 
-.feildset{/* this is for the feildset box.  To remove the beveled border style*/
-	border-style: none;
 
-}
 
 #site-navigation > button { /* This is to hide the Live Chat button in header navigation - Dave */
     display: none;
@@ -2334,9 +2328,6 @@ img#wpstats {
     border-radius: 0;
     background: inherit;
   }
-  .main-navigation li:hover{
-    background: none;
-  }
   .main-navigation li li {
     background: none;        
   }
@@ -2388,10 +2379,10 @@ img#wpstats {
 		line-height: 3.692307692;
 		text-transform: uppercase;
 		white-space: nowrap;
-    -webkit-transition:150ms ease;
-    -moz-transition:150ms ease;
-    -o-transition:150ms ease;
-    transition: 150ms ease;
+		-webkit-transition:150ms ease;
+		-moz-transition:150ms ease;
+		-o-transition:150ms ease;
+		transition: 150ms ease;
 	}
 	.main-navigation li a:hover {
 		/* fallback */
@@ -2425,6 +2416,7 @@ img#wpstats {
 		top: 100%;
     left: 0px;
 		z-index: 51;
+		display: inherit !important;
 	}
   .mega-dropdown {
     left: -999em;
@@ -2468,8 +2460,8 @@ img#wpstats {
   }
   .mega-dropdown li li a {
     margin: 0 !important;
-    line-height: 1.19879 !important;
-    padding: 7px 7px !important;
+    line-height: 0 !important;
+    padding: 15px 11px 15px 5px !important;
   }
   .mega-dropdown a {
     margin: 0px !important;
@@ -2504,8 +2496,8 @@ img#wpstats {
     transition-delay: .15s;
   }
   #legal-resources {
-    width: 272px;
-    height: 105px;
+    width: 153px;
+    height: 180px;
     overflow:hidden;
     padding: 18px !important;
   }
@@ -2518,19 +2510,25 @@ img#wpstats {
     font-size: 14px;
 		font-size: 1rem;
 		line-height: 1.71428571;
-    margin: 0 -5px 0 0 !important;
-    padding: 15px 20px !important;
+    margin: 1px 5px !important;
+    padding: 8px 10px !important;
   }
   #legal-resources li {
-    width:146px;
+    width: 185px;
     padding: 0;
   }
   .col1 {
     width: 150px;
-    float:left;
-    font-weight: normal; 
+    position: relative;
+    font-weight: normal;
+    top: 5px;
+    left: 5px; 
   }
-	
+	.md-col1 {
+		margin-left: -3px;
+		position: relative;
+		top: 5px;
+}
   .col2 {
     width: 150px;
     float:left; 
@@ -2547,19 +2545,16 @@ img#wpstats {
       margin: 0px 0px 0px 20px !important;
   }
 	.main-navigation li ul ul {
-		top: 0;
 		left: 100%;
     margin-left: 20px;
     margin-left: 1.42857143rem;
 	}
   .main-navigation ul ul ul {
-    top: 40px;
     left: -22px;
     width:180px;
     background: #13293B;
   }
   .main-navigation ul ul ul li a {
-		top: 10px;
     width: 200px;
 		display:block;
     text-align:left;
