@@ -1690,30 +1690,19 @@ footer.entry-meta {
 	text-align: center;
 }
 #vbBody {
+	background-color: #384F69;
 	color: #fff;
 	padding: 10px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-	height: 385px;
-=======
-	height: 360px;
->>>>>>> b1afcf0cea9298c3be45194b994c0abd9b1863fe
-=======
-	height: 360px;
->>>>>>> 39e28bc66c3e3ae5de8737186ff7d187ad05b46d
+	height: 390px;
+
 
 }
 #vbVideo {
 	float: left;
 	width: 58%;
 	padding: 5px;
-<<<<<<< HEAD
-<<<<<<< HEAD
 	min-height: 338px;
-=======
->>>>>>> b1afcf0cea9298c3be45194b994c0abd9b1863fe
-=======
->>>>>>> 39e28bc66c3e3ae5de8737186ff7d187ad05b46d
+
 }
 #vbTest {
 	float: right;
