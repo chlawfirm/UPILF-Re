@@ -131,6 +131,9 @@ hgroup .phone-number {
     color: #fff;
     margin-right:0px;
 }
+.live-chat {
+	float: right;
+}
 hgroup h
 audio,
 canvas,
@@ -335,9 +338,15 @@ input[type="reset"]:active {
 	padding: 0;
 }
 .button.gform_button {
-	border-radius: 5px;
-	color: #fff;
-	padding: 10px 15px;
+	margin: 15px 80px 15px 36px;
+	padding: 10px 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+	white-space: nowrap;
+	width: 150px;
+	height: 60px;
 	/* fallback */
 	background-color: #13293B;
 	/* Safari 4-5, Chrome 1-9 */
@@ -354,6 +363,20 @@ input[type="reset"]:active {
 	
 	/* Opera 11.10+ */
 	background: -o-linear-gradient(top, #384F69 20%, #13293B 95%);
+	border-radius: 0px;
+	border: 1px solid #c2bebe;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		-1px -1px 0px rgba(000,000,000,0.2),
+		0px 0px 0px rgba(255,255,255,0.9);
 }
 .button.gform_button:hover {
 	color: #fff;
@@ -551,7 +574,6 @@ body {
 	line-height: 1.33333333;
 	font-family: Helvetica, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
-	color: #444;
 	background: #c2b08c !important; /* Old browsers */
 	background: -moz-linear-gradient(left,  #c2b08c 0%, #fff7dd 51%, #c2b08c 100%) !important; /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c2b08c), color-stop(51%,#fff7dd), color-stop(100%,#c2b08c)) !important; /* Chrome,Safari4+ */
@@ -597,9 +619,6 @@ a:hover {
 }
 
 /* Page structure */
-.site-header {
-	background: transparent;/*#c2b08c; Old browsers */
-}
 .site {
 	padding: 0;
 	background-color: transparent;/*changed from #fff; */
@@ -618,26 +637,12 @@ a:hover {
 	margin: 1.714285714rem 0 0;
 }
 
-/* Trying to do placeholder text 
-.form-email label:before {
-	content: "example@email.com";
-	position: relative;
-	float: right;
-	top: 28px;
-	right: 45px;
-	opacity: 0.6;
-	font-weight: normal;
-}
-.form-email label:focus:before {
-	color: transparent;
-}
-*/
-
 /* Header */
 .site-header {
 	padding:  0; 
-    padding-top: 20px; 
-    text-align: center; 
+	padding-top: 20px; 
+	text-align: center;
+	background: transparent;/*#c2b08c; Old browsers */
 }
 .site-header h1,
 .site-header h2 {
@@ -676,7 +681,7 @@ a:hover {
   margin-bottom: -1.78571429rem;
 	text-align: center;
   background-color: #13293B;
-  padding: 5px 0 6px 0;
+  padding: 0;
 }
 .main-navigation li {
 	margin: 8px 0 6px 0;
@@ -688,9 +693,12 @@ a:hover {
 	border-radius: 6px;
 }
 .main-navigation li a {
-    text-decoration: none;
-    padding: 10px 45px;
-    border-radius: 6px;
+	text-decoration: none;
+	padding: 10px 45px;
+	border-radius: 6px;
+}
+.main-navigation .dropdown a {
+	border-radius: 6px 6px 0 0 !important;
 }
 .main-navigation li a:hover {
     color: #fff;
@@ -714,6 +722,7 @@ a:hover {
 .main-navigation ul.nav-menu,
 .main-navigation div.nav-menu > ul {
 	display: none;
+	margin-bottom: -5px;
 }
 .main-navigation ul.nav-menu.toggled-on,
 .menu-toggle {
@@ -733,7 +742,7 @@ section[role="banner"] {
   background: none repeat scroll 0 0 #FFFFFF;
   border: 3px solid #C2B08C;
   height: 22px;
-  width: 200px;
+  width: 70%;
   margin: 10px 0px 25px 0px;
   border-radius: 0;
   float: left;
@@ -746,6 +755,7 @@ section[role="banner"] {
 	background-color: #C2B08C;
 	width: 40px;
 	float: right;
+	clear: right;
 }
 
 nav #search-icon {
@@ -760,11 +770,6 @@ nav #search {
 	margin: 1px 20px 0 15px;
 }
 
-
-
-#site-navigation > button { /* This is to hide the Live Chat button in header navigation - Dave */
-    display: none;
-}
 
 /* ==========STYLE FOR SEARCH RESULTS====================================== */
 
@@ -813,7 +818,6 @@ button{
 	width: 200px;
 	height: 60px;
 	float: right;
-	
 	background: -moz-linear-gradient(
 		top,
 		#d9d1ba 0%,
@@ -822,10 +826,10 @@ button{
 		linear, left top, left bottom, 
 		from(#d9d1ba),
 		to(#c2b08c));
-    background: -ms-linear-gradient(
-        top, 
-        #d9d1ba 0%, 
-        #c2b08c 100%);
+  background: -ms-linear-gradient(
+    top, 
+    #d9d1ba 0%, 
+    #c2b08c 100%);
 	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px;
 	border-radius: 0px;
@@ -904,21 +908,22 @@ button.orderBttn{
 	white-space: nowrap;
 	width: 150px;
 	height: 60px;
+	/* fallback */
+	background-color: #13293B;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 20% 0%, 0% 95%, from(#384F69), to(#13293B));
 	
-	background: -moz-linear-gradient(
-		top,
-		#cc3333 0%,
-		#993333);
-	background: -webkit-gradient(
-		linear, left top, left bottom, 
-		from(#cc3333),
-		to(#993333));
-    background: -ms-linear-gradient(
-        top, 
-        #cc3333 0%, 
-        #993333 100%);
-	-moz-border-radius: 0px;
-	-webkit-border-radius: 0px;
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #384F69 20%, #13293B 95%);
+	
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #384F69 20%, #13293B 95%);
+	
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #384F69 20%, #13293B 95%);
+	
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #384F69 20%, #13293B 95%);
 	border-radius: 0px;
 	border: 1px solid #c2bebe;
 	-moz-box-shadow:
@@ -936,19 +941,22 @@ button.orderBttn{
 }
 #secondary button.orderBttn:hover {
 	color: #fff;
-	background-color: #ebebeb;
-    background: -moz-linear-gradient(
-		top,
-		#993333 0%,
-		#cc3333);
-    background: -webkit-gradient(
-        linear, left top, left bottom, 
-        from(#993333),
-        to(#cc3333));
-    background: -ms-linear-gradient(
-        top, 
-        #993333 0%, 
-        #cc3333 100%);
+	/* fallback */
+	background-color: #13293B;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 20% 0%, 0% 95%, from(#13293B), to(#384F69));
+	
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #13293B 20%, #384F69 95%);
+	
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #13293B 20%, #384F69 95%);
+	
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #13293B 20%, #384F69 95%);
+	
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #13293B 20%, #384F69 95%);
 }
 
 button.orderBttn:before {
@@ -970,21 +978,22 @@ button.meet-us{
 	white-space: nowrap;
 	width: 150px;
 	height: 60px;
+	/* fallback */
+	background-color: #13293B;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 20% 0%, 0% 95%, from(#384F69), to(#13293B));
 	
-	background: -moz-linear-gradient(
-		top,
-		#cc3333 0%,
-		#993333);
-	background: -webkit-gradient(
-		linear, left top, left bottom, 
-		from(#cc3333),
-		to(#993333));
-    background: -ms-linear-gradient(
-        top, 
-        #cc3333 0%, 
-        #993333 100%);
-	-moz-border-radius: 0px;
-	-webkit-border-radius: 0px;
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #384F69 20%, #13293B 95%);
+	
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #384F69 20%, #13293B 95%);
+	
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #384F69 20%, #13293B 95%);
+	
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #384F69 20%, #13293B 95%);
 	border-radius: 0px;
 	border: 1px solid #c2bebe;
 	-moz-box-shadow:
@@ -1036,21 +1045,22 @@ button.testimonial-bttn{
 	white-space: nowrap;
 	width: 150px;
 	height: 60px;
+	/* fallback */
+	background-color: #13293B;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 20% 0%, 0% 95%, from(#384F69), to(#13293B));
 	
-	background: -moz-linear-gradient(
-		top,
-		#cc3333 0%,
-		#993333);
-	background: -webkit-gradient(
-		linear, left top, left bottom, 
-		from(#cc3333),
-		to(#993333));
-    background: -ms-linear-gradient(
-        top, 
-        #cc3333 0%, 
-        #993333 100%);
-	-moz-border-radius: 0px;
-	-webkit-border-radius: 0px;
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #384F69 20%, #13293B 95%);
+	
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #384F69 20%, #13293B 95%);
+	
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #384F69 20%, #13293B 95%);
+	
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #384F69 20%, #13293B 95%);
 	border-radius: 0px;
 	border: 1px solid #c2bebe;
 	-moz-box-shadow:
@@ -1068,19 +1078,22 @@ button.testimonial-bttn{
 }
 #secondary button.testimonial-bttn:hover {
 	color: #fff;
-	background-color: #ebebeb;
-    background: -moz-linear-gradient(
-		top,
-		#993333 0%,
-		#cc3333);
-    background: -webkit-gradient(
-        linear, left top, left bottom, 
-        from(#993333),
-        to(#cc3333));
-    background: -ms-linear-gradient(
-        top, 
-        #993333 0%, 
-        #cc3333 100%);
+	/* fallback */
+	background-color: #13293B;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 20% 0%, 0% 95%, from(#13293B), to(#384F69));
+	
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #13293B 20%, #384F69 95%);
+	
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #13293B 20%, #384F69 95%);
+	
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #13293B 20%, #384F69 95%);
+	
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #13293B 20%, #384F69 95%);
 }
 
 button.testimonial-bttn:before {
@@ -1112,6 +1125,7 @@ button.testimonial-bttn:after {
   padding: 0.71428571rem 0.71428571rem 0.71428571rem 1.42857143rem;
   box-sizing: border-box;
   overflow: hidden;
+  clear: both;
 }
 .widget-area .widget:first-child {
   margin-top: -8px;
@@ -1169,33 +1183,36 @@ button.testimonial-bttn:after {
 	width: 53.66666666666%; /* define a width to avoid dropping a wider submit button */
 }
 /* Footer */
+
+.blue-bar {
+	height: 50px;
+	width: 100%;
+	background: #13293B;
+	position: relative;
+	top: 40px;
+}
 footer[role="contentinfo"] {
 	clear: both;
 	font-size: 15px;
 	font-size: 1.07142857rem;
-  text-align: center;
 	line-height: 2;
-	max-width: 960px;
-	max-width: 100%;  /*changed from 960px; */
 	max-width: 100%;  /*changed from 960px; */
 	margin-top: 1.714285714rem;
-	margin-left: auto;
-	margin-right: auto;
 	padding: 24px 0;
 	padding: 1.714285714rem 0;
-    overflow: hidden;
+  overflow: hidden;
 }
 footer[role="contentinfo"] a {
-	color: #686868;
-    text-decoration: none;
+	color: #fff;
+  text-decoration: none;
 }
 footer[role="contentinfo"] a:hover {
-	color: #21759b;
+	color: #fff;
 }
 footer p {
-    clear:both;
-    max-width: 1200px;
-    margin-left: 357px;
+  clear:both;
+  max-width: 1200px;
+  margin: auto;
 }
 .bottom-blue-bar {
 	height: 50px;
@@ -1216,31 +1233,10 @@ footer p {
 }
 .chat {
 	font-family: 'Source Sans Pro', sans-serif;
-    font-size: 26px;
-    font-size: 1.85714286rem;
-    font-weight:bold;
-    letter-spacing: 3px;
-    letter-spacing: 0.21428571rem;
-    text-transform:uppercase;
-    color: #fff;
-    background: -moz-linear-gradient(
-    	top,
-    	#1e415e 0%,
-    	#13293B);
-    background: -webkit-gradient(
-    	linear,left top, left bottom,
-    	from(#1e415e),
-    	to(#13293B));
-    position:relative;
-    bottom: 5px;
-    margin: auto;
-    margin-bottom: 15px;
-    padding: 5px auto;
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    border:1px solid #c2bebe;
-    -moz-box-shadow:
+  padding: 5px auto;
+  width: 250px;
+  border: 1px solid #c2bebe;
+  -moz-box-shadow:
 		0px 1px 3px rgba(000,000,000,0.5),
 		inset 0px 0px 2px rgba(255,255,255,0.7);
 	-webkit-box-shadow:
@@ -1252,12 +1248,18 @@ footer p {
 	text-shadow:
 		0px -1px 0px rgba(000,000,000,0.4),
 		0px 1px 0px rgba(255,255,255,0.3);
-    width: 250px;
-    height: 60px;
+		float: right;
 }
-
+.chat-container {
+	width: 1200px;
+	margin: auto;
+}
 .chat:hover{
 	background-color: #4A6D8A;
+}
+.address {
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 /* =Main content and comment content
@@ -2214,14 +2216,7 @@ img#wpstats {
 		margin-bottom: -40px;
 		display:inline-flex;/*testing*/
 	}
-	.bottom-blue-bar .name{
-		margin: 1px 2px 3px 4px;/*testing*/
-	}
-
-	.bottom-blue-bar .footer-address{
-		margin: 1px 2px 3px 4px;  /*testing*/
-	}
-
+	
 	.chat {
 		font-size: 26px;
 		font-size: 1.85714286rem;
@@ -2229,17 +2224,16 @@ img#wpstats {
 		letter-spacing: 3px;
 		letter-spacing: 0.21428571rem;
 		text-transform: uppercase;
-		float: right;
 		color: #fff;
 		background: #13293B;
 		position: relative;
 		bottom: 21px;
-		margin: 0 370px 0 0;
-		margin: 0 26.429rem 0 0;
-		padding: 15px 35px;
-		padding: 1.07142857rem 2.5rem;
+		margin: auto;
+		padding: 10px 15px;
+		padding: 0.71428571rem 1.07142857rem;
 		border-radius: 0px;
-		height: 50px; /* If 50 doesnt work, try 40 */
+		height: 50px; 
+		text-align: center
 	}
 	.header-image {
 		clear:both;
@@ -2299,7 +2293,6 @@ img#wpstats {
 		margin-bottom: 0;
 	}
   .main-navigation {
-    padding-bottom: 0;
      /* fallback */
     background-color: #13293B;
     /* Safari 4-5, Chrome 1-9 */
@@ -2358,7 +2351,6 @@ img#wpstats {
 	.main-navigation li { /* used to control spacing for the nav bar */
 		display: inline-block;
 		text-decoration: none;
-    max-width: 186px;
     margin-left: -20px;
     margin-left: -1.42857143rem;
     padding-left: 20px;
@@ -2423,11 +2415,10 @@ img#wpstats {
     position: absolute;
     height: 400px;
     width: 609px;
-    background: #13293B;
+    background: none repeat scroll 0 0 rgba(19, 41, 59, 0.9);
     overflow: hidden;
     padding: 0 12px !important;
     z-index: 51;
-		opacity: 0.9;
 		filter:alpha(opacity=40); /* For IE8 and earlier */
   }
   .mega-dropdown > li {
@@ -2472,12 +2463,14 @@ img#wpstats {
     width: 203px !important;
   }
   .sub-menu {
-  	background: #13293B;
+  	background: none repeat scroll 0 0 rgba(19, 41, 59, 0.9);
   	padding: 0 0 10px 0 !important;
   	width: 222px;
-  	opacity: 0.9;
 		filter:alpha(opacity=40); /* For IE8 and earlier */
   }
+	#contact-us ul {
+		left: -92px !important;
+	}
   .single-column {
     display: none;
   }
@@ -2489,10 +2482,10 @@ img#wpstats {
 		position: relative;
 		top: 0;
 		left: -4px;
-		width: 186px;
+		width: 190px;
   }
 	.single-column .col1 a {
-		line-height: 0.2 !important;
+		padding: 5px !important;
 		margin: 1px -9px !important;
 	}
   .single-column a {
@@ -2513,6 +2506,7 @@ img#wpstats {
     padding: 18px !important;
     position: absolute;
     left: -2px;
+    top: 59px;
     display: none;
   }
   .main-navigation li:hover #legal-resources {
@@ -2520,7 +2514,7 @@ img#wpstats {
 		transition-delay: .15s;
 	}
   #legal-resources ul {
-    top: 2px;
+    top: 0;
     left: 2px;
     border: 0;
   }
@@ -2528,7 +2522,7 @@ img#wpstats {
     font-size: 14px;
 		font-size: 1rem;
 		line-height: 1.71428571;
-    margin: 1px 5px !important;
+    margin: 1px 3px !important;
     padding: 5px 10px !important;
   }
   #legal-resources li {
@@ -2569,11 +2563,9 @@ img#wpstats {
 	}
   .main-navigation ul ul ul {
     left: -22px;
-    width:180px;
-    background: #13293B;
   }
   .main-navigation ul ul ul li a {
-    width: 179px;
+    width: 182px;
 		display:block;
     text-align:left;
     font-size: auto;
@@ -2590,7 +2582,6 @@ img#wpstats {
     text-align: left;
 		display: block;
 		white-space: inherit;
-		opacity:0.9;
 		filter:alpha(opacity=40); /* For IE8 and earlier */
 	}
   .main-navigation li ul li li a {
@@ -2782,23 +2773,46 @@ img#wpstats {
 @media screen and (max-width: 1070px) {
 	.phone-number {
 		float: none;
-		top: 0;
-		margin-bottom: 10px;
-		margin-right: 0;
+		top: 10px;
+		background: none repeat scroll 0 0 rgba(59, 81, 99, 0.9);
+		margin: 0 auto;
+		display: inline-block;
+		padding: 0 20px;
+		border-radius: 5px;
 	}
 	.site-header {
 		text-align: center;
+		margin-right: 5px;
+	}
+	.live-chat {
+		float: none;
+		margin: 80px auto -25px auto;
+		display: inline-block;
+	}
+	#about-us ul {
+		left: -109px;
+	}
+	#contact-us ul {
+		left: 0 !important;
+	}
+	nav {
+		margin-right: -5px;
 	}
 }
-/* This is to make the sidebare go to the bottom of the page */
+/* This moves the mega dropdown so it 
+wont go off the screen on smaller screens*/
 @media screen and (max-width: 786px) {
-  .site {
-    background-color: #fff;
-  }
+	.main-navigation li:hover .mega-dropdown {
+		left: -80px;
+	}
+}
+/* This is to make the sidebare go to the bottom
+	of the page and adjust the nav */
+@media screen and (max-width: 786px) {
   .site-content {
-    float:none;
-    width:100%;
-    padding: 0 0 0 0px !important;
+    float: none;
+    width: 100%;
+    padding: 0 !important;
     box-sizing: border-box;
   }
   .widget-area {
@@ -2813,10 +2827,10 @@ img#wpstats {
   }
 }
     
-/* This is to make sure the search icon stays on the same line */
-@media screen and (max-width:960px) {
-	#search {
-		width: 76.5%;
+/* This is to make sure the dropdowns don't go off screen*/
+@media screen and (max-width:941px) {
+	#about-us ul {
+		left: 0 !important;
 	}
 }
 
@@ -2992,8 +3006,8 @@ float: left;
 		color: #fff;
 		line-height: 2.692307692;
 		white-space: nowrap;
-        padding: 0 30px;
-        margin: 0 -45px 0 0;
+		padding: 0 30px;
+		margin: 0 -45px 0 0;
 	}
 .ie .main-navigation li a:hover {
                         color: #909090;
