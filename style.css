@@ -2333,8 +2333,8 @@ img#wpstats {
   }
   .main-navigation li li a {
   	font-weight: normal;
-    background: #13293B;
-    border-radius: 0;
+    /*background: #13293B;*/
+    border-radius: 5px;
     right: 5px;
     position: relative;
   }
@@ -2471,17 +2471,30 @@ img#wpstats {
     border-top: 3px solid #4A6D8A;
     width: 203px !important;
   }
+  .sub-menu {
+  	background: #13293B;
+  	padding: 0 0 10px 0 !important;
+  	width: 217px;
+  	opacity: 0.9;
+		filter:alpha(opacity=40); /* For IE8 and earlier */
+  }
   .single-column {
-    opacity:0;
-    visibility:hidden;
+    display: none;
   }
   .single-column ul {
     margin-bottom: 15px !important;
   }
   .single-column li {
-    width: 100px !important;
-    background: #13293B;
+		font-weight: normal;
+		position: relative;
+		top: 0;
+		left: -4px;
+		width: 186px;
   }
+	.single-column .col1 a {
+		line-height: 0.2 !important;
+		margin: 1px -9px !important;
+	}
   .single-column a {
     padding: 15px 10px !important;
     margin: 0 -15px !important;
@@ -2490,17 +2503,23 @@ img#wpstats {
 		line-height: 1.4 !important;
 		text-align: center !important;
   }
-   .main-navigation li:hover .single-column {
-    opacity:1;
-    visibility:visible;
-    transition-delay: .15s;
-  }
+	.main-navigation li:hover .single-column {
+		display: inherit;
+		transition-delay: .15s;
+	}
   #legal-resources {
     width: 153px;
-    height: 180px;
+    height: 192px;
     overflow:hidden;
     padding: 18px !important;
+    position: absolute;
+    left: -2px;
+    display: none;
   }
+  .main-navigation li:hover #legal-resources {
+		display: inherit;
+		transition-delay: .15s;
+	}
   #legal-resources ul {
     top: 2px;
     left: 2px;
@@ -2511,7 +2530,7 @@ img#wpstats {
 		font-size: 1rem;
 		line-height: 1.71428571;
     margin: 1px 5px !important;
-    padding: 8px 10px !important;
+    padding: 5px 10px !important;
   }
   #legal-resources li {
     width: 185px;
@@ -2555,7 +2574,7 @@ img#wpstats {
     background: #13293B;
   }
   .main-navigation ul ul ul li a {
-    width: 200px;
+    width: 179px;
 		display:block;
     text-align:left;
     font-size: auto;
