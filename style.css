@@ -2474,7 +2474,7 @@ img#wpstats {
   .sub-menu {
   	background: #13293B;
   	padding: 0 0 10px 0 !important;
-  	width: 217px;
+  	width: 222px;
   	opacity: 0.9;
 		filter:alpha(opacity=40); /* For IE8 and earlier */
   }
@@ -2501,14 +2501,13 @@ img#wpstats {
     font-size: 14px;
 		font-size: 1rem;
 		line-height: 1.4 !important;
-		text-align: center !important;
   }
 	.main-navigation li:hover .single-column {
 		display: inherit;
 		transition-delay: .15s;
 	}
   #legal-resources {
-    width: 153px;
+    width: 160px;
     height: 192px;
     overflow:hidden;
     padding: 18px !important;
