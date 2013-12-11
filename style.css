@@ -230,12 +230,14 @@ article.format-status footer.entry-meta {
 /* Form fields, general styles first */
 .gfield.gform-left {
   float: left;
+  max-width: 340px;
+  min-width: 150px;
   position: absolute;
-  width: 25%;
+  width: 38%;
 }
 .gfield.gform-right {
   float: right;
-  left: -200px;
+  left: -26.5%;
   position: relative;
   width: 50%;
 }
@@ -336,7 +338,7 @@ input[type="submit"]:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 article.post-password-required input[type=submit]:hover {
-	color: #fff;
+	color: #000;
 	background-color: #ebebeb;
 	background-repeat: repeat-x;
 	background-image: -moz-linear-gradient(top, #f9f9f9, #ebebeb);
@@ -880,7 +882,7 @@ button:hover {
 }
 button:before {
   content: url(/wp-content/uploads/sites/4/2013/11/cartoonspeech_bubble.png);
-  margin-right: 10px;
+  margin-right: 5px;
   position: relative;
   top: 3px;
 }
@@ -1215,6 +1217,7 @@ footer p {
 .address {
 	font-weight: bold;
 	text-transform: uppercase;
+
 }
 
 /* =Main content and comment content
@@ -1329,6 +1332,9 @@ article.sticky .featured-post {
 	margin: 24px 0;
 	margin: 1.714285714rem 0;
 	line-height: 1.714285714;
+	padding: 0px 10px 0px 10px;
+}
+
 }
 .entry-content h1,
 .comment-content h1 {
@@ -1375,16 +1381,17 @@ article.sticky .featured-post {
 	margin: 0 0 1.714285714rem;
 	line-height: 1.714285714;
     font-family: 'Source Sans Pro', sans-serif;
+    padding: 0px 10px 0px 10px;
 }
 
 
-iframe {
+/*iframe {
     border: 5px solid #010101;
     border-radius: 15px;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
-}
+}*/
 .entry-content a:visited,
 .comment-content a:visited {
 	color: #12293B;
@@ -1485,6 +1492,7 @@ img.alignright,
 .wp-caption.alignright {
 	margin: 12px 0 12px 24px;
 	margin: 0.857142857rem 0 0.857142857rem 1.714285714rem;
+	padding-left: 45px;
 }
 img.aligncenter,
 .wp-caption.aligncenter {
@@ -1622,55 +1630,14 @@ footer.entry-meta {
 	color: #757575;
 	font-weight: normal;
 }
-#vb {
-	background-color: #384F69;
-}
-#vbTitle {
-	color: #fff;
-	font-size: 26px;
-	padding-top: 15px;
-	text-align: center;
-}
-#vbBody {
-	color: #fff;
-	padding: 10px;
-	height: 390px;
-
-}
-#vbVideo {
-	float: left;
-	width: 58%;
-	padding: 5px;
-}
-#vbTest {
-	float: right;
-	width: 37%;
-	padding: 5px;
-	margin-top: 105px;
-}
-#vbThumbs {
+.video-slider {
+  background-color: #384F69;
   color: #FFFFFF;
-  padding: 15px 10px 0 10px;
-  height: 65px;
+  margin-top: -60px;
+  padding-bottom: 1px;
 }
-#vbThumbs a {
-	color: #fff;
-}
-#vbThumbs li {
-	list-style: none;
-	display: inline-block;
-	margin:-66px 35px -12px 45px;
-}
-.vbContents {
-  position: relative;
-}
-.vbTestContent:before {
-  content: "“";
-  font-size: 120px;
-  left: -17px;
-  opacity: 0.35;
-  position: absolute;
-  top: -80px;
+.video-slider h2 {
+	padding: 30px 0 0 40px;
 }
 /* =Archives
 -------------------------------------------------------------- */
@@ -2104,10 +2071,17 @@ a.comment-edit-link:hover {
 	display: block;
 	text-align: right;
 }
+.custom-menu{
+	background: transparent;
+
+}
 .custom-menu ul li {
   list-style: none !important;
   line-height: 1.3 !important;
+  background: transparent;
+
 }
+
 .custom-menu ul li:before { /* this is for the triangles */
   content: "";
   border-color: transparent #12293B;
@@ -2119,6 +2093,7 @@ a.comment-edit-link:hover {
   left: -1em;
   top: 1em;
   position: relative;
+
 }
 /* =Plugins
 ----------------------------------------------- */
@@ -2155,7 +2130,7 @@ img#wpstats {
 		margin-bottom: -40px;
 		display:inline-flex;/*testing*/
 	}
-	
+	 
 	.chat {
 		font-size: 26px;
 		font-size: 1.85714286rem;
@@ -2205,6 +2180,7 @@ img#wpstats {
 	.site-content {
 		margin-top: 25px;
 		width: 65.104166667%;
+		float:right;
 	}
 	body.template-front-page .site-content,
 	body.single-attachment .site-content,
@@ -2217,6 +2193,7 @@ img#wpstats {
     margin-left: 0;
     margin-top: 33px;
     overflow: hidden;
+    float: left;
 	}
   .site-header {
     text-align: left;
@@ -2341,8 +2318,12 @@ img#wpstats {
     background: none repeat scroll 0 0 rgba(19, 41, 59, 0.9);
     overflow: hidden;
     padding: 0 12px !important;
+    opacity: 40;
     z-index: 51;
 		filter:alpha(opacity=40); /* For IE8 and earlier */
+		opacity: .4; /* other browsers  and IE9+ */
+		filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40); /* IE6+ */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=40)"; /* this works in IE8 only */
   }
   .mega-dropdown > li {
   	font-size: 17px;
@@ -2390,6 +2371,9 @@ img#wpstats {
   	padding: 0 0 10px 0 !important;
   	width: 222px;
 		filter:alpha(opacity=40); /* For IE8 and earlier */
+		opacity: .4; /* other browsers  and IE9+ */
+		filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40); /* IE6+ */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=40)"; /* this works in IE8 only */
   }
 	#contact-us ul {
 		left: -92px !important;
@@ -2506,6 +2490,9 @@ img#wpstats {
 		display: block;
 		white-space: inherit;
 		filter:alpha(opacity=40); /* For IE8 and earlier */
+		opacity: .4; /* other browsers  and IE9+ */
+		filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40); /* IE6+ */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=40)"; /* this works in IE8 only */
 	}
   .main-navigation li ul li li a {
     font-size: 14px;
@@ -2612,46 +2599,53 @@ img#wpstats {
 	.header-image {
 		margin-top: 20px
 	}
+	#menu-test1{
+		overflow: hidden;
+	}
   .main-navigation {
-      width: 100%;
-      height: auto;
-      margin: 23px auto -25px;
+    width: 100%;
+    height: auto;
+    margin: 23px auto -25px;
   }
   .main-navigation li {
-      height: auto;
-      text-align: center;
-      line-height: 40px;
-      border-radius: 5px;
-  }
-  .main-navigation li:nth-child(1) {
-  	margin-top: 17px;
+	  border-radius: 5px;
+	  height: auto;
+	  line-height: 30px;
+	  text-align: center;
+	  width: 12rem;
+	}
+	.main-navigation li:hover {
+		background: #4D6F95;
 	}
   .main-navigation li a {
-      padding: 15px;
-      padding: 1.07142857rem;
-      margin: 0px;
-  }
+	  display: block;
+	  left: -62px;
+	  margin: 0;
+	  padding: 0 64px;
+	  position: relative;
+	  width: 97%;
+	}
   .site-content {
-      max-width: 100%;
-      padding: 1px 10px !important;
-      padding: 0.07142857rem 0.71428571rem !important;
+    max-width: 100%;
+    padding: 1px 10px !important;
+    padding: 0.07142857rem 0.71428571rem !important;
   }
   .form-link {
-      visibility:visible;
-      color: #fff;
-      background-color: #13293B;        
-      padding: 10px 20px;
-      padding: 0.71428571rem 1.42857143rem;
-      margin-left: 5px;
-      margin-left: 0.35714286rem;
-      border-radius: 5px;
-      text-decoration:none;
+    visibility:visible;
+    color: #fff;
+    background-color: #13293B;        
+    padding: 10px 20px;
+    padding: 0.71428571rem 1.42857143rem;
+    margin-left: 5px;
+    margin-left: 0.35714286rem;
+    border-radius: 5px;
+    text-decoration:none;
   }
   .form-link:hover {
-      color: #fff;
+    color: #fff;
   }
   .form-link:visited {
-      color: #fff;
+    color: #fff;
   }
   #search {
 		display: none;
@@ -2675,12 +2669,12 @@ img#wpstats {
 		border: 3px solid transparent;
 		display: inline;
 		float: left;
-		width: 40%;
-		margin: 2px 0 -15px 28%;
+		width: 30%;
+		margin: 2px 0 -15px 50%;
 	}
 	.menu-toggle {
-		margin: 10px 60px;
-		width: 110px;
+		margin: 10px 30px;
+		width: 80px;
 		float: right;
 	}
 	.img-slider {
@@ -2690,37 +2684,7 @@ img#wpstats {
   	box-shadow: 0 0 10px rgba(10, 49, 51, 0.4);
   }
 }
-/* This is to make the nubmer move above the logo
- and center when the screen is small enough*/
-@media screen and (max-width: 1070px) {
-	.phone-number {
-		float: none;
-		top: 10px;
-		background: none repeat scroll 0 0 rgba(59, 81, 99, 0.9);
-		margin: 0 auto;
-		display: inline-block;
-		padding: 0 20px;
-		border-radius: 5px;
-	}
-	.site-header {
-		text-align: center;
-		margin-right: 5px;
-	}
-	.live-chat {
-		float: none;
-		margin: 80px auto -25px auto;
-		display: inline-block;
-	}
-	#about-us ul {
-		left: -109px;
-	}
-	#contact-us ul {
-		left: 0 !important;
-	}
-	nav {
-		margin-right: -5px;
-	}
-}
+
 /* This moves the mega dropdown so it 
 wont go off the screen on smaller screens*/
 @media screen and (max-width: 786px) {
@@ -2764,6 +2728,7 @@ wont go off the screen on smaller screens*/
 		margin: 0;
 		position: inherit;
 	}
+}
 
 /* Minimum width of 960 pixels. */
 @media screen and (min-width: 960px) {
@@ -2780,6 +2745,38 @@ wont go off the screen on smaller screens*/
 		margin-top: 0;
 		margin-bottom: 0;
 		box-shadow: none;
+	}
+}
+
+/* This is to make the nubmer move above the logo
+ and center when the screen is small enough*/
+@media screen and (max-width: 1070px) {
+	.phone-number {
+		float: none;
+		top: 10px;
+		background: none repeat scroll 0 0 rgba(59, 81, 99, 0.9);
+		margin: 0 auto;
+		display: inline-block;
+		padding: 0 20px;
+		border-radius: 5px;
+	}
+	.site-header {
+		text-align: center;
+		margin-right: 5px;
+	}
+	.live-chat {
+		float: none;
+		margin: 80px auto -25px auto;
+		display: inline-block;
+	}
+	#about-us ul {
+		left: -109px;
+	}
+	#contact-us ul {
+		left: 0 !important;
+	}
+	nav {
+		margin-right: -5px;
 	}
 }
 
@@ -2918,9 +2915,47 @@ float: left;
 
 
 /* for IE8 and IE7 —————-*/
+
+.ie body{
+	background: #c2b08c !important; /* Old browsers */
+	background: -moz-linear-gradient(left,  #c2b08c 0%, #fff7dd 51%, #c2b08c 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c2b08c), color-stop(51%,#fff7dd), color-stop(100%,#c2b08c)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #c2b08c 0%,#fff7dd 51%,#c2b08c 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #c2b08c 0%,#fff7dd 51%,#c2b08c 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #c2b08c 0%,#fff7dd 51%,#c2b08c 100%) !important; /* IE10+ */
+	background: linear-gradient(to right,  #c2b08c 0%,#fff7dd 51%,#c2b08c 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2b08c', endColorstr='#c2b08c',GradientType=1 ) !important; /* IE6-9 */
+	margin: 0;
+}
+
+.ie .mega-dropdown{
+	background: none repeat scroll 0 0 rgba(19, 41, 59);
+	opacity: .4; /* other browsers  and IE9+ */
+	filter: alpha(opacity=40); /* IE6+ */
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40); /* IE6+ */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=40)"; /* this works in IE8 only */
+}
+
+.ie .mega-dropdown li ul li a{
+	background: none repeat scroll 0 0 rgba(19, 41, 59);
+	opacity: .4; /* other browsers  and IE9+ */
+	filter: alpha(opacity=40); /* IE6+ */
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40); /* IE6+ */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=40)"; /* this works in IE8 only */
+}
+
+.ie .sub-menu{
+	background: none repeat scroll 0 0 rgba(19, 41, 59);
+	opacity: .4; /* other browsers  and IE9+ */
+	filter: alpha(opacity=40); /* IE6+ */
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40); /* IE6+ */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=40)"; /* this works in IE8 only */
+}
+
 .ie .site-content {
 float: right;
 }
+
 .ie .widget-area {
 float: left;
 }
@@ -2988,4 +3023,10 @@ float: left;
 
 .ie .chat:hover{
 	background-color: #4A6D8A;
+}
+.ie .address{
+	padding-top: 700px;
+}
+.ie nav #search {
+	display: none;
 }
