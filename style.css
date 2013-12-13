@@ -2180,7 +2180,6 @@ img#wpstats {
 		float: right;
 		position: relative;
 		top: 50px;
-		margin-right: 20px;
 	}
 	.author-avatar {
 		float: left;
@@ -3133,3 +3132,25 @@ float: left;
 .ie9 .main-navigation li li a{
 	background: #13293B;
 }
+
+/* this is for the advanced browser check popup screen */
+
+.advanced-browser-check {
+	background: none !important;
+}
+
+.adv_browser_check {
+	border: 3px solid #4D6F95 !important;
+}
+
+.adv_browser_check a.abc-hide {
+	border: 3px solid #4D6F95 !important;
+}
+
+.adv_browser_check_icons li {
+	display: inline-block;
+	zoom: 1;
+	*display: inline !important;
+}
+
+/* end advanced browser stuff */
