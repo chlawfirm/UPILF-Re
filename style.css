@@ -1101,7 +1101,7 @@ button.testimonial-bttn:after {
   margin-top: -8px;
   margin-top: -0.57142857rem;
 }
-.widget-area .widget h2 { /* this is used to change the headers on the side bar... was h3*/
+.widget-area .widget h3 { 
   color: #13293B; /*changed from #fff; */
   background-color: transparent;/*changed from #C2B08C; */
 	margin-bottom: 10px;
@@ -2600,9 +2600,9 @@ img#wpstats {
 		overflow: hidden;
 	}
   .main-navigation {
-    width: 100%;
+    width: 101%;
     height: auto;
-    margin: 23px auto -25px;
+    margin: 23px auto -59px;
   }
   .main-navigation li {
 	  border-radius: 5px;
@@ -2621,6 +2621,9 @@ img#wpstats {
 	  padding: 0 64px;
 	  position: relative;
 	  width: 97%;
+	}
+	.sub-menu {
+	  display: none;
 	}
   .site-content {
     max-width: 100%;
